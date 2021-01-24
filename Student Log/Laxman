@@ -1,15 +1,30 @@
-PROGRESS:
-- The wireframe design and initial scratch is completed. Changes can be made as per need Prof suggestion, and team members' suggestion. 
-- Listened to team members during sprint meeting, received suggestions on logo they wanted in the web page and it has been designed as per it. 
+PIG REPORT-Laxman Chamlagai
+
+I’m the web designer in the project and will be working on developing the company’s website. Following are the tasks assigned to me:
+	Create visual outline for AmazonDashboard application.
+	Design and create a company logo.
+	Develop UI of the website.
+Progress:
+WireFrame:
+The visual outline for the application is completed. An example is the attached wireframe. 
+Application will be developed using HTML5, CSS, Bootstrap,JQuery, JavaScript languages and its libraries. 
+It will be designed to be a fully responsive application.
+Tools needed for development work is fully installed and functional. 
+I also started looking into some front end application templates to kick start the development work. 
+
+Issues:
+One of the issues I have right now is converting the company logo to a oval shape using PS. 
+Team thought is to use an oval shaped logo but will also accept if the logo is not oval and is a rectangular.
+
+Goals:
+My goals is to have the at least actual front end one page is developed by the end of the next week so the 
+developers start to feel the application to map their code into the application. 
 
 
-GOAL:
-- Complete logo design and wireframe of the website. 
-- Logo design is finished. 
+ISSUES with GITHUB:
+When I paste the wireframe and logo, it is not pasting it here.
+
+ 
 
 
-ISSUE:
--I'm not being able to paste Logo and webpage wireframe here so I will share path to thoese files.
--Path : C:\Users\laksh\Documents\Reynolds_stuff\Spring 2021\ITD 298\Week1\oval.logo
 
--Path: C:\Users\laksh\Documents\Reynolds_stuff\Spring 2021\ITD 298\Week1\Formated-logo-AmazonDashboard
