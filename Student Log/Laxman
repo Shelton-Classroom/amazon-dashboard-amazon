@@ -1,9 +1,9 @@
 PIG REPORT-Laxman Chamlagai
 
 I’m the web designer in the project and will be working on developing the company’s website. Following are the tasks assigned to me:
-	Create visual outline for AmazonDashboard application.
+	Create visual outline for MediaBazaar(AmazonDashboard) application which is basically a online order management software.
 	Design and create a company logo.
-	Develop UI of the website.
+	Develop UI interphase of the website.
 Progress:
 WireFrame:
 The visual outline for the application is completed. An example is the attached wireframe. 
@@ -17,7 +17,8 @@ One of the issues I have right now is converting the company logo to a oval shap
 Team thought is to use an oval shaped logo but will also accept if the logo is not oval and is a rectangular.
 
 Goals:
-My goals is to have the at least actual front end one page is developed by the end of the next week so the 
+Develop at least one front end web page completed by the end of Sprint-1.
+My goals is to have the at least actual front end one page developed by the end of the next week so the 
 developers start to feel the application to map their code into the application. 
 
 
