@@ -1,3 +1,7 @@
+*******************************************************************************************************************************************************************************
+     ******************************************************  Week-2    Jan 18th --- Jan 24th    ****************************************************************
+********************************************************************************************************************************************************************************
+
 PIG REPORT-Laxman Chamlagai
 
 I’m the web designer in the project and will be working on developing the company’s website. Following are the tasks assigned to me:
@@ -26,6 +30,18 @@ ISSUES with GITHUB:
 When I paste the wireframe and logo, it is not pasting it here.
 
  
+*******************************************************************************************************************************************************************************
+     ******************************************************  Week-3    Jan 25th --- Jan 31st    ****************************************************************
+********************************************************************************************************************************************************************************
+Progress:
+--> Remote git repository created. Cloned it locally, added html, css, img, and js files. Home html page development is on progress.
+--> Commited local change to remote branch successfully. This will allow me to successfully deploy my code to git. 
 
 
+Issues:
+After cloning the remote repositiory into visual stiduo 2019, I was unable to run and build code locally. This had consumed my time so much so I decided to move
+with another IDE.
 
+
+Goals:
+I want to at least finish one page of coding which will be for index.html.
