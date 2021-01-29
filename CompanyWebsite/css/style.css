@@ -127,7 +127,7 @@ h2 {
     z-index: 1;
     opacity: 0;
     transition: .5s;
-    background: rgba(255, 111, 97, .7);
+    background: #c383cc;
     border-radius: 4px;
 }
 
@@ -234,6 +234,7 @@ h2 {
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
+
 .nav {
     position: relative;
 }
@@ -302,6 +303,12 @@ h2 {
         box-shadow: none;
     }
 }
+/***********************************/
+/********* Nav logo CSS  *********/
+/***********************************/
+/* .nav-item, img{
+    width:auto; */
+    /* padding-right: 5%; */
 
 
 /**********************************/
@@ -415,7 +422,7 @@ h2 {
 
 .header .navbar {
     padding: 0;
-    height: 100%;
+    /* height: 100%; */                  /**** Removing this hight will not have padding on the top, otherwise, it will show large white space on the top *****/
     max-height: 400px;
     overflow: hidden;
     background: #ffffff !important;
@@ -474,7 +481,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 111, 97, .7);
+    background: #c383cc;
     transition: all 0.3s;
     z-index: 1;
 }
@@ -527,7 +534,7 @@ h2 {
     height: 100%;
     display: flex;
     align-items: center;
-    background: rgba(255, 111, 97, .7);
+    background: #c383cc;
     transition: all 0.3s;
     opacity: 0;
 }
@@ -617,7 +624,7 @@ h2 {
     height: 100%;
     display: flex;
     align-items: center;
-    background: rgba(255, 111, 97, .7);
+    background: #c383cc;
     transition: all 0.3s;
     opacity: 0;
 }
