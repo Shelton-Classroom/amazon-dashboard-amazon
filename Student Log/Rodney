@@ -14,16 +14,24 @@ DATE	TOPIC	DISPOSITION
 01/21/21	New Team Member	Spent approximately 1.5 hours with Mathew Gerloff after the team meeting bring him UpToDate and describing the order process described to the rest of the team the previous week
 01/22/21	Team MediaBazaar	Per meeting discussion, I loaded a sample photo and biography out to OneNote.  This is a task the team can accomplish early during the slow part of the project development process.
 01/23/21	SQL	Spoke with Tyler Saturday night and ensured he realized he now had access to SQLDBM.  We discussed a link that I put into OneNote that will give him access to the top 10 C# Utilities that he may find interesting to help with the project
-
+01/24/21	SQL	Worked with Caleb Crommer to get a backup of the original MITS database to use as a starting point for the MediaBazaar database
+01/25/21	SQL	Worked with Bob Dust to facilitate changes to the database and to create a more robust design.  Smoothed out several design issues
+01/26/21	SQL	Restored the MITS database on my local machine based on Bob Dust’s directions and tutor ledge 
+01/27/21	SQL	Spent 3 hours cleaning 2019 Shipping Data preparing for input into the database.  2020 Shipping Data and orders for both years will be next.
+01/27/21	SQL	Began documenting the content and source of each field of the database for developer use.  Will work with microapps people to load the documentation to SQL database
+01/28/21	Team Meeting	Discussed progress with each team member and reviewed the progress that Laxman, Tyler and Matthew have made.  Matthew is going to review other formats to present data on the website and he was able to demonstrate Excel Maps as an option. 
+01/30/21	Page Formatting	Designed the basis of a generic page formatting for the reporting tab.  
+01/30/21	Universal Note Button	Began to visually design the purpose of the Universal Note Button.  Discussed layout with Amanda and will discuss with Bob.  This button will mostly be used on pages from the Reporting and Input Tabs
+		
 
 Issues
 DATE	TOPIC	DISPOSITION
-01/14/21	GIT Classroom	Except for Laxman all of us are having trouble accessing GIT Classroom
-01/13/21	SQL	Work with Bob to do setup of SQL at home.  This will allow me to review other data structures to complete order processing database
+01/14/21	GIT Classroom	Except for Laxman all of us are having trouble accessing GIT Classroom. RESOLVED
+01/13/21	SQL	Work with Bob to do setup of SQL at home.  This will allow me to review other data structures to complete order processing database.  RESOLVED
 01/12/21	GIT/GIT HUB 	Review Amanda’s video and determine additional needs for GIT Hub
 1/17/21	Stored Procedures	Website execution of a stored procedure
 1/17/21	Single Page Login	Research a single page login where when the user logs in with a specific ID, they can only see a single web page
-01/24/21	Visual Studio	There was an issue with an expiration of a login of Visual Studio.  This is going to require all my accounts that I have with Microsoft to be listed to regain full access
+01/24/21	Visual Studio	There was an issue with an expiration of a login of Visual Studio.  This is going to require all my accounts that I have with Microsoft to be listed to regain full access.  RESOLVED
 01/24/21	Logo	Will require additional research and discussion with Laxman on the creation and look of logo.  We have already discussed a tag line, corporate name, and the shape of the logo (oval.)
 		
 		
@@ -38,3 +46,9 @@ DATE	TOPIC	DISPOSITION
 01/18/21	SQL	Reviewed Distribution dataset to ensure that data from Stamps.com and ShipStation.com will work with the Table
 01/24/21	Dashboard Layout	Work with team to discuss the layout of the dashboard.  Locate a utility that will create a map of the United States and shade the different states based on sales
 01/24/21	SQL	Finalize v1 of the database
+		
+01/29/21	SQL	Working with Bob to resolve remaining SQL structure issues, generate the appropriate scripts and then will load the database to the school Servers for team use
+01/30/21	SQL	Finish sanitizing the data for loading to the database and begin to use SQL to load the data to the appropriate tables
+		
+		
+
