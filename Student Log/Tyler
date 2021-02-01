@@ -2,3 +2,7 @@
 P- Started making the API for the Application.
 I- No issues as of yet but subject to change.
 G- Continue working on the API.
+1/25-1/31/2021
+P- Created an API controller and possibly have the GET for SellerActive up for inventory
+I- Having trouble getting GitHub connected to classroom.
+G- Have GitHub classroom connected to upload code. Figure out how to use the authentication in the API.
