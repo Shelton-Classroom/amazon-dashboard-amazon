@@ -36,6 +36,8 @@ When I paste the wireframe and logo, it is not pasting it here.
 Progress:
 --> Remote git repository created. Cloned it locally, added html, css, img, and js files. Home html page development is on progress.
 --> Commited local change to remote branch successfully. This will allow me to successfully deploy my code to git. 
+--> Oval shaped logo design is completed and added into the home page. It doesn't appear oval because logo color and background color of the nav-bar area match. 
+--> Currently, I'm working on About page, and eventually plan is to progress on other pages.
 
 
 Issues:
