@@ -1,0 +1,10 @@
+﻿
+2/2/2021 Completed:
+Added Yeti CSS
+Started working on layout
+
+In Progress 2/3/2021:
+Yeti theme-Add Nav Bar & buttons-
+Add Images to Images folder-Company logo/Order Management Graph images/Invenotory Graph Images/Sales Graph Images
+What Objects need to be created this week? 
+Connect Database for Amazon Dashboard Capstone Project
