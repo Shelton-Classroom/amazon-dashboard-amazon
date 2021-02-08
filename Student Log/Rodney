@@ -22,6 +22,9 @@ DATE	TOPIC	DISPOSITION
 01/28/21	Team Meeting	Discussed progress with each team member and reviewed the progress that Laxman, Tyler and Matthew have made.  Matthew is going to review other formats to present data on the website and he was able to demonstrate Excel Maps as an option. 
 01/30/21	Page Formatting	Designed the basis of a generic page formatting for the reporting tab.  
 01/30/21	Universal Note Button	Began to visually design the purpose of the Universal Note Button.  Discussed layout with Amanda and will discuss with Bob.  This button will mostly be used on pages from the Reporting and Input Tabs
+02/01/21	SQL	Worked on preparing data for input.  Testing SQL commands to insert and properly load data.  This includes test loading tables to my local database have worked on this several hours a day from the 2-01-21 Thru 02-07-21
+02/04/21	Team Meeting	Discussed each team members progress.  Tyler, Laxman, Mathew and myself present.  Discussed with Tyler him becoming lead programmer for the project.  Worked with Laxman and determined the need for several more images from commercial image vendors.
+02/04/21	SQL	Worked with Bob to rectify several SQL issues including CONVERT
 		
 
 Issues
@@ -33,7 +36,9 @@ DATE	TOPIC	DISPOSITION
 1/17/21	Single Page Login	Research a single page login where when the user logs in with a specific ID, they can only see a single web page
 01/24/21	Visual Studio	There was an issue with an expiration of a login of Visual Studio.  This is going to require all my accounts that I have with Microsoft to be listed to regain full access.  RESOLVED
 01/24/21	Logo	Will require additional research and discussion with Laxman on the creation and look of logo.  We have already discussed a tag line, corporate name, and the shape of the logo (oval.)
-		
+02/04/21	Team 	We are still not sure if Tawana is part of the team as she is not responding to messages or meeting invites.  Amanda is reaching out to her
+02/06/21	SQL	Having trouble formatting the Date properly for individual columns.  I am going to test using the format command to properly load the data into the table
+02/07/21	SQL	Will need to limit the data to 2020 thru 2021 (Current).  The 2019 needs a lot more to assemble the data into a single excel file.  This is because of the Amazon.Com data retention policy.  Would have 
 		
 Goals
 DATE	TOPIC	DISPOSITION
@@ -49,6 +54,5 @@ DATE	TOPIC	DISPOSITION
 		
 01/29/21	SQL	Working with Bob to resolve remaining SQL structure issues, generate the appropriate scripts and then will load the database to the school Servers for team use
 01/30/21	SQL	Finish sanitizing the data for loading to the database and begin to use SQL to load the data to the appropriate tables
+02/07/21	SQL	Load all the data for 2020 thru 2021 current to the school database for all required tables
 		
-		
-
