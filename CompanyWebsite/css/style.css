@@ -273,6 +273,11 @@ h2 {
         display: none;
     }
     
+    #Media-logo{
+        color:#194072e1
+        
+        
+    }
     .nav .navbar-dark a.nav-link {
         color: #ffffff;
         font-size: 14px;
@@ -987,6 +992,56 @@ h2 {
     content: "\f105";
 }
 
+/**********************************/
+/*********** Team CSS ***********/
+/**********************************/
+
+.testimonials h3 {
+    text-align: center;
+}
+.testimonials h4, h5 {
+    font-size: 2.4em;
+    font-family: sans-serif;
+}
+.page-info1 {
+	text-align: center;
+}
+.page-info1 h1{
+    font-size: 3em;
+    color: #000;
+    text-transform: uppercase;
+	line-height:1.4em;
+	letter-spacing:0.2em;
+    font-weight: 900;
+}
+.page-info1 p {
+    font-size: 1em;
+    color: #000;
+    line-height: 1.8em;
+	padding:3em 0em 0em;
+}
+.flexslider .slides img {
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%; 
+	-ms-border-radius: 50%; 
+    background: rgb(100, 6, 58);
+    width: 90%;
+    margin: 0 auto;
+}
+.page-info1 h3 {
+    font-size: 3em;
+	color:#999;
+}
+.testimonials h5 {
+    font-size: 1.4em;
+    color: #999;
+}
+.testimonials .col-md-9 {
+	padding-left:0px;
+	padding-right:0px;
+}
 
 /**********************************/
 /*********** Review CSS ***********/

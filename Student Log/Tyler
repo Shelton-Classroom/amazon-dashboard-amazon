@@ -6,3 +6,7 @@ G- Continue working on the API.
 P- Created an API controller and possibly have the GET for SellerActive up for inventory
 I- Having trouble getting GitHub connected to classroom.
 G- Have GitHub classroom connected to upload code. Figure out how to use the authentication in the API.
+2/1-2/7/2021
+P- The api for Seller Active is pulling data from the website now.
+I- No issues currently
+G- Start working on Ship Station api

@@ -1,0 +1,14 @@
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\apiCallerTest.exe.config
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\apiCallerTest.exe
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\apiCallerTest.pdb
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\AmazonAPI.dll
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\AmazonAPI.pdb
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\AmazonAPI.dll.config
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\obj\Debug\apiCallerTest.csprojAssemblyReference.cache
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\obj\Debug\apiCallerTest.csproj.CoreCompileInputs.cache
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\obj\Debug\apiCallerTest.csproj.CopyComplete
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\obj\Debug\apiCallerTest.exe
+C:\Users\Wob\Documents\Capstone Project\AmazonAPI\apiCallerTest\obj\Debug\apiCallerTest.pdb
