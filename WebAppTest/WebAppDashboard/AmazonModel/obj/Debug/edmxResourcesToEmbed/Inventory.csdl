@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InventoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="UniversalInventory">
+    <Key>
+      <PropertyRef Name="SKU" />
+    </Key>
+    <Property Name="SKU" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WorkStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductFormat" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="WillShipInternationally" Type="Boolean" Nullable="false" />
+    <Property Name="ExpeditedShipping" Type="Boolean" Nullable="false" />
+    <Property Name="ItemConditionCode" Type="Int32" Nullable="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FullfilmentCenterId" Type="Int32" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateLastModified" Type="DateTime" Precision="7" />
+    <Property Name="ItemNoteDefault" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AmazonBestSellerRank" Type="Int32" />
+    <Property Name="PullingComplete" Type="Boolean" />
+    <Property Name="MerchantId" Type="Int32" Nullable="false" />
+    <Property Name="TheSourceId" Type="Int32" Nullable="false" />
+    <Property Name="BatchInputId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="InventoryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UniversalInventories" EntityType="Self.UniversalInventory" />
+  </EntityContainer>
+</Schema>
