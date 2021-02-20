@@ -1,1 +1,80 @@
+*******************************************************************************************************************************************************************************
+     ******************************************************  Week-2    Jan 18th --- Jan 24th    ****************************************************************
+********************************************************************************************************************************************************************************
+
+PIG REPORT-Laxman Chamlagai
+
+I’m the web designer in the project and will be working on developing the company’s website. Following are the tasks assigned to me:
+	Create visual outline for MediaBazaar(AmazonDashboard) application which is basically a online order management software.
+	Design and create a company logo.
+	Develop UI interphase of the website.
+Progress:
+WireFrame:
+The visual outline for the application is completed. An example is the attached wireframe. 
+Application will be developed using HTML5, CSS, Bootstrap,JQuery, JavaScript languages and its libraries. 
+It will be designed to be a fully responsive application.
+Tools needed for development work is fully installed and functional. 
+I also started looking into some front end application templates to kick start the development work. 
+
+Issues:
+One of the issues I have right now is converting the company logo to a oval shape using PS. 
+Team thought is to use an oval shaped logo but will also accept if the logo is not oval and is a rectangular.
+
+Goals:
+Develop at least one front end web page completed by the end of Sprint-1.
+My goals is to have the at least actual front end one page developed by the end of the next week so the 
+developers start to feel the application to map their code into the application. 
+
+
+ISSUES with GITHUB:
+When I paste the wireframe and logo, it is not pasting it here.
+
+ 
+*******************************************************************************************************************************************************************************
+     ******************************************************  Week-3    Jan 25th --- Jan 31st    ****************************************************************
+********************************************************************************************************************************************************************************
+Progress:
+--> Remote git repository created. Cloned it locally, added html, css, img, and js files. Home html page development is on progress.
+--> Commited local change to remote branch successfully. This will allow me to successfully deploy my code to git. 
+--> Oval shaped logo design is completed and added into the home page. It doesn't appear oval because logo color and background color of the nav-bar area match. 
+--> Currently, I'm working on About page, and eventually plan is to progress on other pages.
+
+
+Issues:
+After cloning the remote repositiory into visual stiduo 2019, I was unable to run and build code locally. This had consumed my time so much so I decided to move
+with another IDE.
+
+
+Goals:
+I want to at least finish one page of coding which will be for index.html.
+
+*******************************************************************************************************************************************************************************
+     ******************************************************  Week-4    Feb 1 --- Feb 7th    ****************************************************************
+********************************************************************************************************************************************************************************
+
+PROGRESS:
+--> Working to develop About & Team Page. If these two are completed, will move with Testimonials page.
+--> As per the last Sprint discussion with team group, Company's Tag name wanted to be more sharp which will emphasis the company's vision. Currently looking into different avenues how that can be achieved.
+--> Eventhough, I said I would finish about and team page, I was only able to finish 70-80% of coding work on About page. I will continue to work on this and add team page on parallel.
+
+ISSUES:
+--> I'm gtting git merge conflict. my commit and orgina is diverged. I do not know how to fix this. I have tried looking for solution online but, nothing helped me.
+
+GOALS:
+--> To finish about and team page. If both are not achieviable, will finish at least one of them. 
+
+
+*******************************************************************************************************************************************************************************
+     ******************************************************  Week-5    Feb 8 --- Feb 14th    ****************************************************************
+********************************************************************************************************************************************************************************
+
+PROGRESS:
+--> About  is 80% completed and Team Page. is about 50% complete. 
+--> Still working on company's tag name, some small changes were required as per team input from last sprint meeting.
+
+ISSUES:
+--> Still can commit any local changes to remote main. Last week, I had to manually upload a about.html file and on going will do same for team.html page too.
+
+GOALS:
+--> To finish about and team page. 
 

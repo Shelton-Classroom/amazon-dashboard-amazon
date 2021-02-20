@@ -1,0 +1,33 @@
+Sprint : Amazon Dashboard
+PREPARED	TOPIC	DISCUSSION
+WEEK 1	Team Setup	The team has worked continuously to design a working organization to facilitate the smooth functioning of our team.  Prepared communication plan, setup infrastructure and meeting schedules
+WEEK 1	Statement of work	Loose statement of work created with high level descriptions attached to functionality grid
+WEEK 1	Process	Held numerous meetings to communicate and explain the process to the team from a stakeholder’s perspective
+WEEK 1	Research	Assigned research topics to various team members.  Worked within the team to design a data input process for specific types of data 
+WEEK 2	APIs	Researched, defined and pseudo coded various APIs: SellerActive, Ship Station, currency conversion and others
+WEEK 2	Corporate Philosophies	Mission Statement, Customer Value Statement, Core competencies
+WEEK 2	Logo	Moved logo graphics to shared drive for logo and tagline preparation by the team
+WEEK 2-3	Team	Began to prepare the team photos and biographies for the website
+WEEK3	Graphics	Determine possibility of creating US map to present orders
+WEEK3	Software	Tyler has laid out the API helpers and software process to manipulate APIs and effectuate the use within the software
+WEEK3	Website	Template selection and proposed formats suggested.  The initial outline of the website was presented and reviewed by the team.
+WEEK 3	Brochure	Brochure was discussed and initial list of functionalities to include was contemplated.  The statement of work will act as a roadmap for the brochure.
+
+OUTCOMES	TOPICS	DISCUSSION
+WEEK 1 - 3	Presentation	Each week the team has presented topic findings.  The findings are reviewed, and decisions are made on go or no-go situations.  If needed additional research is performed and represented on the information is obtained.
+WEEK 3	Meetings	Team has implemented a round table presentation approach at each meeting so that each team member can discuss success, findings, impediments, goals, and new topics needing discussion and/or review
+		
+		
+		
+		
+		
+
+GOALS	TOPICS	DISCUSSION
+WEEK 4	SQL	Generate database on school servers
+WEEK 4-5	Statement of Work	Finalize statement of work functionality so that the developers can fully understand the scope of what they will be attempting to develop.  This will include all the required functionality for the orders dashboard
+WEEK 4-6	Website	Continue to discover, define, design, and development of the website
+WEEK 4-6	Scaffolding	Build out the MVC scaffolding so that the data can be input
+WEEK 5-6	SQL	Build store procedures, load data to appropriate tables, craft views and unit test data for validity
+WEEK 5	Unified Notes	Begin the discover, define, design, and development 
+		
+

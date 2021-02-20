@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InventoryModelStoreContainer" CdmEntityContainer="InventoryEntities">
+    <EntitySetMapping Name="UniversalInventories">
+      <EntityTypeMapping TypeName="InventoryModel.UniversalInventory">
+        <MappingFragment StoreEntitySet="UniversalInventory">
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="WorkStatus" ColumnName="WorkStatus" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductFormat" ColumnName="ProductFormat" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="WillShipInternationally" ColumnName="WillShipInternationally" />
+          <ScalarProperty Name="ExpeditedShipping" ColumnName="ExpeditedShipping" />
+          <ScalarProperty Name="ItemConditionCode" ColumnName="ItemConditionCode" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="FullfilmentCenterId" ColumnName="FullfilmentCenterId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="DateLastModified" ColumnName="DateLastModified" />
+          <ScalarProperty Name="ItemNoteDefault" ColumnName="ItemNoteDefault" />
+          <ScalarProperty Name="AmazonBestSellerRank" ColumnName="AmazonBestSellerRank" />
+          <ScalarProperty Name="PullingComplete" ColumnName="PullingComplete" />
+          <ScalarProperty Name="MerchantId" ColumnName="MerchantId" />
+          <ScalarProperty Name="TheSourceId" ColumnName="TheSourceId" />
+          <ScalarProperty Name="BatchInputId" ColumnName="BatchInputId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

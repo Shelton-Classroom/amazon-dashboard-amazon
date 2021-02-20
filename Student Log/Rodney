@@ -1,1 +1,58 @@
+Progress
+DATE	TOPIC	DISPOSITION
+01/14/21	Team Meeting	Facilitated team meeting to describe the current reporting process.  In addition, the team discussed research issues and topics that individuals could review for the week
+01/13/21	Digital Notebooks	Digital notebooks created, formatted, and distributed for team review and updates.  We discussed usage during the team meeting; Notebook name: MediaBazaar Order Processing
+01/12/21	Communications Plan	Assembled team contact information and documented team communication issues.  This is included in the digital notebook
+01/18/21	SQL	Setup Settlements Dataset
+01/19/21	SQL	Chatted with Bob to resolve some issues regarding ETL.  Came up with a process to load data and best practice standards for orders, distribution, and settlements tables
+01/20/21	SQLDBM	Spoke with Caleb for permission to add several people to view of Database.  Approval was granted so I added Regina and Tyler
+01/20/21	Meeting Outline	Generated Topics for Discussion in OneNote
+01/20/21	SQL	Continue researching data and naturalizing the database.  Discussed address table with Bob Dust
+01/21/21	Visio	Edit and generate the processing solution stack
+01/21/21	Communication	Discussed a shared drive with the team and Towana took on the task of creating a share drive.  Once this has been created, I will load the proposed Logo
+01/21/21	Team Meeting	Facilitated team meeting to addition of new team member.  Discussed the proposed mission statement, corporate philosophies, and target customer.  While Regina was not at this meeting, we did discuss scaffolding with the rest of the team and sought buy-in of the process.  
+01/21/21	New Team Member	Spent approximately 1.5 hours with Mathew Gerloff after the team meeting bring him UpToDate and describing the order process described to the rest of the team the previous week
+01/22/21	Team MediaBazaar	Per meeting discussion, I loaded a sample photo and biography out to OneNote.  This is a task the team can accomplish early during the slow part of the project development process.
+01/23/21	SQL	Spoke with Tyler Saturday night and ensured he realized he now had access to SQLDBM.  We discussed a link that I put into OneNote that will give him access to the top 10 C# Utilities that he may find interesting to help with the project
+01/24/21	SQL	Worked with Caleb Crommer to get a backup of the original MITS database to use as a starting point for the MediaBazaar database
+01/25/21	SQL	Worked with Bob Dust to facilitate changes to the database and to create a more robust design.  Smoothed out several design issues
+01/26/21	SQL	Restored the MITS database on my local machine based on Bob Dust’s directions and tutor ledge 
+01/27/21	SQL	Spent 3 hours cleaning 2019 Shipping Data preparing for input into the database.  2020 Shipping Data and orders for both years will be next.
+01/27/21	SQL	Began documenting the content and source of each field of the database for developer use.  Will work with microapps people to load the documentation to SQL database
+01/28/21	Team Meeting	Discussed progress with each team member and reviewed the progress that Laxman, Tyler and Matthew have made.  Matthew is going to review other formats to present data on the website and he was able to demonstrate Excel Maps as an option. 
+01/30/21	Page Formatting	Designed the basis of a generic page formatting for the reporting tab.  
+01/30/21	Universal Note Button	Began to visually design the purpose of the Universal Note Button.  Discussed layout with Amanda and will discuss with Bob.  This button will mostly be used on pages from the Reporting and Input Tabs
+02/01/21	SQL	Worked on preparing data for input.  Testing SQL commands to insert and properly load data.  This includes test loading tables to my local database have worked on this several hours a day from the 2-01-21 Thru 02-07-21
+02/04/21	Team Meeting	Discussed each team members progress.  Tyler, Laxman, Mathew and myself present.  Discussed with Tyler him becoming lead programmer for the project.  Worked with Laxman and determined the need for several more images from commercial image vendors.
+02/04/21	SQL	Worked with Bob to rectify several SQL issues including CONVERT
+		
 
+Issues
+DATE	TOPIC	DISPOSITION
+01/14/21	GIT Classroom	Except for Laxman all of us are having trouble accessing GIT Classroom. RESOLVED
+01/13/21	SQL	Work with Bob to do setup of SQL at home.  This will allow me to review other data structures to complete order processing database.  RESOLVED
+01/12/21	GIT/GIT HUB 	Review Amanda’s video and determine additional needs for GIT Hub
+1/17/21	Stored Procedures	Website execution of a stored procedure
+1/17/21	Single Page Login	Research a single page login where when the user logs in with a specific ID, they can only see a single web page
+01/24/21	Visual Studio	There was an issue with an expiration of a login of Visual Studio.  This is going to require all my accounts that I have with Microsoft to be listed to regain full access.  RESOLVED
+01/24/21	Logo	Will require additional research and discussion with Laxman on the creation and look of logo.  We have already discussed a tag line, corporate name, and the shape of the logo (oval.)
+02/04/21	Team 	We are still not sure if Tawana is part of the team as she is not responding to messages or meeting invites.  Amanda is reaching out to her
+02/06/21	SQL	Having trouble formatting the Date properly for individual columns.  I am going to test using the format command to properly load the data into the table
+02/07/21	SQL	Will need to limit the data to 2020 thru 2021 (Current).  The 2019 needs a lot more to assemble the data into a single excel file.  This is because of the Amazon.Com data retention policy.  Would have 
+		
+Goals
+DATE	TOPIC	DISPOSITION
+01/17/21	Project Plan	Build out project plan and assign more tasks
+01/17/21	Data Format	Gather more data requirements and layout initial database
+01/17/21	Load Final 2020 Data	Assemble the data to complete the 2020 orders Excel File and load into SQL
+01/17/21	Team Repository	Make the final decision with the team as to where to store documents. Completed 
+01/17/21	Team Pictures-Bio	While it is slow at the beginning of the project work with the team to gather pictures and generate bios for team page. In-process
+01/17/21	Research	Work with developers to assign refresh data frequency process and develop functionality
+01/18/21	SQL	Reviewed Distribution dataset to ensure that data from Stamps.com and ShipStation.com will work with the Table
+01/24/21	Dashboard Layout	Work with team to discuss the layout of the dashboard.  Locate a utility that will create a map of the United States and shade the different states based on sales
+01/24/21	SQL	Finalize v1 of the database
+		
+01/29/21	SQL	Working with Bob to resolve remaining SQL structure issues, generate the appropriate scripts and then will load the database to the school Servers for team use
+01/30/21	SQL	Finish sanitizing the data for loading to the database and begin to use SQL to load the data to the appropriate tables
+02/07/21	SQL	Load all the data for 2020 thru 2021 current to the school database for all required tables
+		
