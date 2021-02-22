@@ -25,7 +25,15 @@ DATE	TOPIC	DISPOSITION
 02/01/21	SQL	Worked on preparing data for input.  Testing SQL commands to insert and properly load data.  This includes test loading tables to my local database have worked on this several hours a day from the 2-01-21 Thru 02-07-21
 02/04/21	Team Meeting	Discussed each team members progress.  Tyler, Laxman, Mathew and myself present.  Discussed with Tyler him becoming lead programmer for the project.  Worked with Laxman and determined the need for several more images from commercial image vendors.
 02/04/21	SQL	Worked with Bob to rectify several SQL issues including CONVERT
-		
+02/17/21	UI	Researched images for the website that will be used to provide some direction to Laxman 
+02/18/21	Team Meeting	Discussed each team members progress.  Lost a Tawana as a team member.  Matthew setup up a new google drive for us to use as a team
+02/19/21	SQL	After many trials and tribulations all the data from 2020 has been tested and loaded to the school’s servers.  We will still need to make some decisions on onloading 2021 data
+02/20/21	SQL	Worked throughout the week to resolve the remaining data conversion issues for the Destination and Settlement Tables
+02/22/21	OneNote	Continued to build the field documentation for each SQL table in use for this project.  This will be used to assist Matthew creating the online documentation and will be used for SQL documentation.
+
+02/22/21	GitHub	Tyler and I spoke with Amanda on Sunday night to discuss the process of commit, fetch, pull to sync our collective code
+02/23/21	SQL	Built Trigger to update CurrencyConversionDate when CurrencyConversionRate is updated with a value greater than 0.
+02/23/21	SQL	Built the basis of the first SQL View For Items Sold Dashboard KPI
 
 Issues
 DATE	TOPIC	DISPOSITION
@@ -39,6 +47,7 @@ DATE	TOPIC	DISPOSITION
 02/04/21	Team 	We are still not sure if Tawana is part of the team as she is not responding to messages or meeting invites.  Amanda is reaching out to her
 02/06/21	SQL	Having trouble formatting the Date properly for individual columns.  I am going to test using the format command to properly load the data into the table
 02/07/21	SQL	Will need to limit the data to 2020 thru 2021 (Current).  The 2019 needs a lot more to assemble the data into a single excel file.  This is because of the Amazon.Com data retention policy.  Would have 
+02/22/21		Surprisingly, no issues this week to report
 		
 Goals
 DATE	TOPIC	DISPOSITION
@@ -51,8 +60,13 @@ DATE	TOPIC	DISPOSITION
 01/18/21	SQL	Reviewed Distribution dataset to ensure that data from Stamps.com and ShipStation.com will work with the Table
 01/24/21	Dashboard Layout	Work with team to discuss the layout of the dashboard.  Locate a utility that will create a map of the United States and shade the different states based on sales
 01/24/21	SQL	Finalize v1 of the database
-		
 01/29/21	SQL	Working with Bob to resolve remaining SQL structure issues, generate the appropriate scripts and then will load the database to the school Servers for team use
 01/30/21	SQL	Finish sanitizing the data for loading to the database and begin to use SQL to load the data to the appropriate tables
 02/07/21	SQL	Load all the data for 2020 thru 2021 current to the school database for all required tables
+02/23/21	GitHub	Sync our perspective code so that we can start functioning more like a group of developers
+02/23/21	SQL	Continue to build Triggers, Store Procedures and C# Methods
+02/23/21	Data Entry	Load the Excel data files to the shared drive so that Matthew can begin the data entry process.  He will be entering all new inventory purchases for 2020 and 2021
+02/23/21	Transaction Flow	Begin the process of documenting the order flow with indication of time issues
+02/24/21	C#	Review Bob’s YouTube helper/partial page video
+
 		
