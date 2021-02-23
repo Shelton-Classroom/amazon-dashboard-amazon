@@ -85,8 +85,11 @@ GOALS:
 
 PROGRESS:
 --> Both About & Team.html pages are 90-95%. Remaining would to be add content based on the Company broucher.
+--> Also added login & pricing html. They are complete to 90-95% entend. 
+--> Testimonial page is finished and it is made to scroll to it when testimonial nav tab is clicked. Actual customer reviews still need to be added as a part of its content.
 --> As per previous team meetings, team member recommended that company's logo tag name needs some changes and this specific work need to be performed using photoshop.
---> I'w still working on tag name. 
+--> I'w still working on tag name in parallel.
+--> Will set up server access using WinScp
 
 ISSUES:
 --> I have been trying many ways to commit code into git remote main but everytime I'm getting some kind of git issues. My recent codes which was commited is not yet in the remote 
@@ -96,4 +99,5 @@ ISSUES:
 --> Also, team wanted me to make changes on the About.html page. Based on some team members' research, they suggested what exact content should go in about.html and I'm making changes as per the team suggestion.
 
 GOALS:
---> I started with pricing.html and will continue to work on the same.
+--> I complete server set up and all the html pages.
+--> Starting Week 7, will start to work on CSS for team's MVC application. 
