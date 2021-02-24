@@ -43,8 +43,8 @@
     });
     
     
-    // Product Slider 4 Column
-    $('.product-slider-4').slick({
+    // team Slider 4 Column
+    $('.team-slider-4').slick({
         autoplay: true,
         infinite: true,
         dots: false,
@@ -79,8 +79,8 @@
     });
     
     
-    // Product Slider 3 Column
-    $('.product-slider-3').slick({
+    // team Slider 3 Column
+    $('.team-slider-3').slick({
         autoplay: true,
         infinite: true,
         dots: false,
@@ -109,23 +109,23 @@
     });
     
     
-    // Product Detail Slider
-    $('.product-slider-single').slick({
+    // team Detail Slider
+    $('.team-slider-single').slick({
         infinite: true,
         autoplay: true,
         dots: false,
         fade: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.product-slider-single-nav'
+        asNavFor: '.team-slider-single-nav'
     });
-    $('.product-slider-single-nav').slick({
+    $('.team-slider-single-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        asNavFor: '.product-slider-single'
+        asNavFor: '.team-slider-single'
     });
     
     
