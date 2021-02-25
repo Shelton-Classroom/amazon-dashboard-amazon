@@ -1,6 +1,11 @@
 /**********************************/
+
+
 /********** General CSS ***********/
+
+
 /**********************************/
+
 body {
     /* color: #e690e6; */
     color: #353535;
@@ -40,8 +45,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Back to Top CSS *********/
+
+
 /**********************************/
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -66,8 +76,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********* Form Input CSS *********/
+
+
 /**********************************/
+
 .form-control,
 .custom-select {
     width: 100%;
@@ -119,8 +134,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******* Normal Slider CSS ********/
+
+
 /**********************************/
+
 .normal-slider .slick-prev,
 .normal-slider .slick-next {
     width: 40px;
@@ -200,13 +220,19 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Top Bar CSS ***********/
+
+
 /**********************************/
+
 .top-bar {
     padding: 3px 0;
     font-size: 14px;
     color: #c383cc;
-    background: #000000;;
+    background: #000000;
+;
 }
 
 .top-bar i {
@@ -223,9 +249,8 @@ h2 {
 
 @media (max-width: 575.98px) {
     .top-bar {
-        border-bottom: 1px solid rgba(255,255,255,.1);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
     }
-    
     .top-bar .col-sm-6:first-child,
     .top-bar .col-sm-6:last-child {
         text-align: center;
@@ -234,8 +259,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Nav Bar CSS **********/
+
+
 /**********************************/
+
 .nav {
     position: relative;
 }
@@ -269,17 +299,14 @@ h2 {
     .nav .navbar {
         background: #c383cc !important;
     }
-    
     .nav .navbar-brand {
         display: none;
     }
-    
     .nav .navbar-dark a.nav-link {
         color: #ffffff;
         font-size: 14px;
         text-transform: uppercase;
     }
-    
     .nav .navbar-dark a.nav-link:hover,
     .nav .navbar-dark a.nav-link.active {
         color: #07fff4;
@@ -290,16 +317,13 @@ h2 {
     .nav {
         padding: 5px 0;
     }
-    
     .nav,
     .nav .navbar {
         background: #000000 !important;
     }
-    
     .nav a.nav-link {
         padding: 5px 0;
     }
-    
     .nav .dropdown-menu {
         box-shadow: none;
     }
@@ -307,8 +331,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********* Bottom Bar CSS *********/
+
+
 /**********************************/
+
 .bottom-bar {
     padding: 15px 0;
     /* background: #ffffff; */
@@ -396,7 +425,6 @@ h2 {
         text-align: center;
         margin-bottom: 15px;
     }
-    
     .bottom-bar .user {
         margin-bottom: 0;
     }
@@ -404,8 +432,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Header CSS ***********/
+
+
 /**********************************/
+
 .header {
     position: relative;
 }
@@ -440,10 +473,10 @@ h2 {
 .header .navbar a {
     color: #353535;
 }
+
 .header .navbar a:hover {
     color: #c383cc;
 }
-
 
 .header .navbar i {
     color: #c383cc;
@@ -482,9 +515,8 @@ h2 {
     z-index: 1;
 }
 
-.header-slider .header-slider-caption h5{
-
-    color:whitesmoke;
+.header-slider .header-slider-caption h5 {
+    color: whitesmoke;
     font-size: medium;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -494,7 +526,7 @@ h2 {
     color: #ffffff;
     font-size: 16px;
     /* font-family: 'Source Code Pro', monospace; */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -525,9 +557,9 @@ h2 {
 }
 
 .header .img-item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .header .img-text {
@@ -544,7 +576,7 @@ h2 {
 }
 
 .header .img-text:hover {
-    opacity: 1;     
+    opacity: 1;
 }
 
 .header .img-text p {
@@ -558,13 +590,19 @@ h2 {
 }
 
 .header .img-text:hover p {
-    margin: 0;       
+    margin: 0;
 }
 
 
 /**********************************/
+
+
 /********* Breadcrumb CSS *********/
+
+
 /**********************************/
+
+
 /* .breadcrumb-wrap {
     position: relative;
     width: 100%;
@@ -579,8 +617,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Category CSS **********/
+
+
 /**********************************/
+
 .category {
     position: relative;
     padding: 0 15px;
@@ -615,9 +658,9 @@ h2 {
 }
 
 .category .category-item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .category .category-name {
@@ -635,7 +678,7 @@ h2 {
 }
 
 .category .category-name:hover {
-    opacity: 1;     
+    opacity: 1;
 }
 
 .category .category-name p {
@@ -649,13 +692,18 @@ h2 {
 }
 
 .category .category-name:hover p {
-    margin: 0;       
+    margin: 0;
 }
 
 
 /**********************************/
+
+
 /*********** Feature CSS **********/
+
+
 /**********************************/
+
 .feature {
     position: relative;
 }
@@ -690,8 +738,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** team Item CSS ********/
+
+
 /**********************************/
+
 .team-item {
     position: relative;
 }
@@ -700,7 +753,8 @@ h2 {
     padding: 15px;
     text-align: center;
     /* background: #000000; */
-    background: #000000;;
+    background: #000000;
+;
     transition: all .3s;
 }
 
@@ -737,7 +791,7 @@ h2 {
     color: #ffffff;
 }
 
-.team-item:hover .team-content  {
+.team-item:hover .team-content {
     color: #dddddd;
 }
 
@@ -753,16 +807,16 @@ h2 {
 }
 
 .team-item .team-image img {
-    width: 100%; 
+    width: 100%;
     transition: all .3s;
 }
 
-.team-item:hover .team-image img  p{
-    color:white;
+.team-item:hover .team-image img p {
+    color: white;
     transform: scale(1.2);
 }
 
-.team-item .team-image .team-action  {
+.team-item .team-image .team-action {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -778,8 +832,8 @@ h2 {
     opacity: 0;
 }
 
-.team-item:hover .team-image .team-action  {
-    opacity: 1; 
+.team-item:hover .team-image .team-action {
+    opacity: 1;
 }
 
 .team-item .team-image .team-action a {
@@ -814,12 +868,13 @@ h2 {
 
 .team-item .team-price {
     padding: 20px;
-    background: #000000;;
+    background: #000000;
+;
     /* background: #000000; */
     transition: all .3s;
 }
 
-.team-item:hover .team-price  {
+.team-item:hover .team-price {
     background: #c383cc;
 }
 
@@ -836,7 +891,8 @@ h2 {
 .team-item .team-price .btn {
     float: right;
     border: none;
-    color: #000000;;
+    color: #000000;
+;
     background: #c383cc;
 }
 
@@ -852,8 +908,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Featured team ********/
+
+
 /**********************************/
+
 .featured-team {
     position: relative;
     padding: 30px 0;
@@ -924,8 +985,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******** team View CSS ********/
+
+
 /**********************************/
+
 .team-view {
     position: relative;
     width: 100%;
@@ -1037,8 +1103,9 @@ h2 {
 .team-view .pagination .page-item:hover .page-link,
 .team-view .pagination .page-item.active .page-link {
     /* color: #FF6F61; */
-   color: #c383cc;
-    background: #000000;;
+    color: #c383cc;
+    background: #000000;
+;
 }
 
 @media (max-width: 991.98px) {
@@ -1049,8 +1116,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******* team Detail CSS *******/
+
+
 /**********************************/
+
 .team-detail {
     position: relative;
     width: 100%;
@@ -1109,6 +1181,8 @@ h2 {
 @media (min-width: 768px) {
     .team-detail .team-content {
         padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -1188,7 +1262,8 @@ h2 {
     color: #ffffff;
     font-size: 16px;
     text-align: center;
-    background: #000000;;
+    background: #000000;
+;
     border: none;
 }
 
@@ -1202,14 +1277,16 @@ h2 {
 
 .team-detail .nav.nav-pills .nav-link {
     color: #c383cc;
-    background: #000000;;
+    background: #000000;
+;
     border-radius: 0;
     transition: all .3s;
 }
 
 .team-detail .nav.nav-pills .nav-link:hover,
 .team-detail .nav.nav-pills .nav-link.active {
-    color: #000000;;
+    color: #000000;
+;
     background: #c383cc;
 }
 
@@ -1296,12 +1373,17 @@ h2 {
 .team-detail .tab-content .form button:hover {
     color: #ffffff;
     background: #c383cc;
-} */
+}
 
 
 /**********************************/
+
+
 /********** Sidebar CSS ***********/
+
+
 /**********************************/
+
 .sidebar-widget {
     padding: 30px;
     background: #ffffff;
@@ -1366,11 +1448,11 @@ h2 {
 }
 
 .sidebar-widget.brands ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
 }
 
 .sidebar-widget.brands ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar-widget.brands ul li a {
@@ -1399,7 +1481,7 @@ h2 {
 }
 
 .sidebar-widget.brands ul li a:hover {
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 
 .sidebar-widget.brands ul li span {
@@ -1451,8 +1533,13 @@ h2 {
 
 
 /**********************************/
+
+
 /************ Cart CSS ************/
+
+
 /**********************************/
+
 .cart-page {
     position: relative;
     margin-top: 30px;
@@ -1539,7 +1626,8 @@ h2 {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
-    background: #000000;;
+    background: #000000;
+;
     border: none;
 }
 
@@ -1626,7 +1714,8 @@ h2 {
 
 .cart-page .cart-summary .cart-btn button:hover {
     color: #c383cc;
-    background: #000000;;
+    background: #000000;
+;
 }
 
 .cart-page .cart-summary .cart-btn button:first-child {
@@ -1643,8 +1732,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Pricing CSS **********/
+
+
 /**********************************/
+
 .pricing-page {
     position: relative;
     padding: 30px 0;
@@ -1730,14 +1824,20 @@ h2 {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
-    background: #000000;;
+    background: #000000;
+;
     border: none;
 }
 
 
 /**********************************/
+
+
 /********** Checkout CSS **********/
+
+
 /**********************************/
+
 .checkout {
     position: relative;
     padding-top: 30px;
@@ -1815,7 +1915,8 @@ h2 {
     font-weight: 700;
     font-size: 25px;
     text-align: center;
-    color: #000000;;
+    color: #000000;
+;
     background: #c383cc;
     border: none;
     border-radius: 4px;
@@ -1824,13 +1925,19 @@ h2 {
 
 .checkout .checkout-payment .checkout-btn button:hover {
     color: #c383cc;
-    background: #000000;;
+    background: #000000;
+;
 }
 
 
 /**********************************/
+
+
 /********* My Account CSS *********/
+
+
 /**********************************/
+
 .my-account {
     position: relative;
     padding: 30px 0;
@@ -1885,8 +1992,13 @@ h2 {
 
 
 /**********************************/
+
+
 /******* Call to Action CSS *******/
+
+
 /**********************************/
+
 .call-to-action {
     position: relative;
     padding: 30px 0;
@@ -1915,8 +2027,10 @@ h2 {
 }
 
 .call-to-action a:hover {
-    color: #000000;;
-    border-color: #000000;;
+    color: #000000;
+;
+    border-color: #000000;
+;
 }
 
 @media (max-width: 767.98px) {
@@ -1924,7 +2038,6 @@ h2 {
     .call-to-action .col-md-6:last-child {
         text-align: center;
     }
-    
     .call-to-action h1 {
         margin-bottom: 20px;
     }
@@ -1932,8 +2045,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********* Newsletter CSS *********/
+
+
 /**********************************/
+
 .newsletter {
     position: relative;
     padding: 30px 0;
@@ -1977,18 +2095,17 @@ h2 {
 
 .newsletter .form button:hover {
     color: #c383cc;
-    background: #000000;;
+    background: #000000;
+;
 }
 
 @media (max-width: 767.98px) {
     .newsletter {
         text-align: center;
     }
-    
     .newsletter h1 {
         margin-bottom: 20px;
     }
-    
     .newsletter .form {
         margin: 0 auto;
     }
@@ -1996,8 +2113,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Brand CSS ************/
+
+
 /**********************************/
+
 .brand {
     position: relative;
     margin-bottom: 30px;
@@ -2006,12 +2128,12 @@ h2 {
 }
 
 .brand .brand-item {
-    text-align: center; 
+    text-align: center;
 }
 
 .brand .brand-item img {
     max-width: 100%;
-    margin: auto; 
+    margin: auto;
 }
 
 .brand .slick-prev,
@@ -2047,7 +2169,8 @@ h2 {
 .brand .slick-prev:focus,
 .brand .slick-next:hover,
 .brand .slick-next:focus {
-    background: #000000;;
+    background: #000000;
+;
 }
 
 .brand .slick-prev:hover::before,
@@ -2062,7 +2185,8 @@ h2 {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 30px;
-    color: #000000;;
+    color: #000000;
+;
 }
 
 .brand .slick-prev::before {
@@ -2075,8 +2199,13 @@ h2 {
 
 
 /**********************************/
+
+
 /*********** Review CSS ***********/
+
+
 /**********************************/
+
 .review {
     margin-bottom: 30px;
 }
@@ -2099,9 +2228,9 @@ h2 {
 }
 
 .review .review-img img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .review .review-text {
@@ -2145,8 +2274,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Contact CSS ***********/
+
+
 /**********************************/
+
 .contact {
     position: relative;
     padding-top: 30px;
@@ -2212,8 +2346,13 @@ h2 {
 
 
 /**********************************/
+
+
 /****** Register & Login CSS ******/
+
+
 /**********************************/
+
 .login {
     position: relative;
     padding-top: 30px;
@@ -2228,8 +2367,13 @@ h2 {
 
 
 /**********************************/
+
+
 /********** Footer CSS ************/
+
+
 /**********************************/
+
 .footer {
     position: relative;
     padding: 30px 0 0 0;
@@ -2245,7 +2389,7 @@ h2 {
 .footer .footer-widget h2 {
     font-size: 25px;
     white-space: nowrap;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .footer .footer-widget ul {
@@ -2255,11 +2399,11 @@ h2 {
 }
 
 .footer .footer-widget ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 12px;
 }
 
 .footer .footer-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .footer .footer-widget ul li a {
@@ -2323,7 +2467,7 @@ h2 {
 .footer .payment {
     padding-top: 25px;
     padding-bottom: 25px;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 @media (min-width: 992px) {
@@ -2350,11 +2494,10 @@ h2 {
     .footer .payment-method {
         margin-bottom: 15px;
     }
-    
     .footer .payment-method,
     .footer .payment-security {
-        text-align: center; 
-    } 
+        text-align: center;
+    }
 }
 
 .footer .payment-method h2,
@@ -2373,12 +2516,18 @@ h2 {
 
 
 /**********************************/
+
+
 /******** Footer Bottom CSS *******/
+
+
 /**********************************/
+
 .footer-bottom {
     position: relative;
     padding: 25px 0;
-    background: #000000;;
+    background: #000000;
+;
 }
 
 .footer-bottom .copyright {
@@ -2409,6 +2558,6 @@ h2 {
 @media (max-width: 768.98px) {
     .footer-bottom .copyright,
     .footer-bottom .template-by {
-        text-align: center; 
-    } 
+        text-align: center;
+    }
 }
