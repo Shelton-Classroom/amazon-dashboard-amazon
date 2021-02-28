@@ -1,0 +1,4 @@
+﻿2/22/2021
+RH - Changed Order Area to Purchase Area (Company Purchases)
+	 Inventory Area is modeled from the UniversalInventory Table
+	 SalesOrder Area is for Sales receipts and returns
