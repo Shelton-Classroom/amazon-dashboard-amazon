@@ -128,7 +128,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Inventory\InventoryAreaRegistration.cs" />
-    <Compile Include="Areas\Order\OrderAreaRegistration.cs" />
+    <Compile Include="Areas\Purchase\OrderAreaRegistration.cs" />
     <Compile Include="Areas\SalesReport\SalesReportAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -142,6 +142,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Yeti.css" />
+    <Content Include="Documentation\ChangeLog.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -149,7 +150,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Inventory\Views\web.config" />
-    <Content Include="Areas\Order\Views\web.config" />
+    <Content Include="Areas\Purchase\Views\web.config" />
     <Content Include="Areas\SalesReport\Views\web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -182,9 +183,9 @@
     <Folder Include="Areas\Inventory\Controllers\" />
     <Folder Include="Areas\Inventory\Data\" />
     <Folder Include="Areas\Inventory\Views\Shared\" />
-    <Folder Include="Areas\Order\Controllers\" />
-    <Folder Include="Areas\Order\Data\" />
-    <Folder Include="Areas\Order\Views\Shared\" />
+    <Folder Include="Areas\Purchase\Controllers\" />
+    <Folder Include="Areas\Purchase\Data\" />
+    <Folder Include="Areas\Purchase\Views\Shared\" />
     <Folder Include="Areas\SalesReport\Controllers\" />
     <Folder Include="Areas\SalesReport\Data\" />
     <Folder Include="Areas\SalesReport\Views\Shared\" />
