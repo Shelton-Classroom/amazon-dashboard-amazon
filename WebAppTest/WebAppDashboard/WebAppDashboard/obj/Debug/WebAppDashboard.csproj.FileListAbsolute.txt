@@ -58,3 +58,6 @@ D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboar
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboard\obj\Debug\WebAppDashboard.dll
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboard\obj\Debug\WebAppDashboard.pdb
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboard\obj\Debug\WebAppDashboard.csprojAssemblyReference.cache
+D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboard\bin\AmazonModel.dll
+D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboard\bin\AmazonModel.pdb
+D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\WebAppDashboard\bin\AmazonModel.dll.config

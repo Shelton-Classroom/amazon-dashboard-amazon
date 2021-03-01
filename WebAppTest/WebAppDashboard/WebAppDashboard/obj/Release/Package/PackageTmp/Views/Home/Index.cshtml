@@ -2,7 +2,15 @@
 @{
     ViewBag.Title = "MediaBazaar Project";
 }
-
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Inventory", "Index", "Inventory", new { @area = "Inventory" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+        </ul>
+    </div>
+</nav>
 <div class="jumbotron">
     <h1>MediaBazaar Dashboard</h1>
     <p class="lead">Welcome To Your Dashboard<br />Map Sales by State-Add Image/Graph<br />Total Sales for YTD-Add Image/Graph<br />Monthly Sales vs Returns-Add Image/Graph</p>
@@ -15,7 +23,7 @@
         <h2>Inventory Management</h2>
         <p>New Inventory Added Daily </p>
         <p></p>
-        @Html.ActionLink(@HttpUtility.HtmlDecode("&#10070; Inventory &#10070; "), "Index", "Inventory", new { @area = "Inventory" }, new { @class = "btn btn-primary" })
+        @Html.ActionLink(@HttpUtility.HtmlDecode("&#10070; Inventory &#10070; "), "Index", "Inventory", new { @area = "Inventory" }, new { @class="btn btn-primary btn-lg"})
     </div>
     
     <div class="col-md-4">

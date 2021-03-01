@@ -1,7 +1,13 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Inventory", "Index", "Inventory", new { @area = "Inventory" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+        </ul>
+    </div>
+</nav>
 
-<p>Use this area to provide additional information.</p>

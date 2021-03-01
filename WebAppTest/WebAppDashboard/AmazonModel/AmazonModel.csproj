@@ -68,6 +68,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ExpenseModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Inventory\Inventory.cs" />
     <Compile Include="Inventory\InventoryModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
