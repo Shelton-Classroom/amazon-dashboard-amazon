@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="c52fd255d59144929130920bdcc177eb" Name="Diagram1">
-        <EntityTypeShape EntityType="ExpenseCaptureModel.ExpenseCapture" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExpenseCaptureModel.ExpenseCapture" Width="2.375" PointX="0.875" PointY="2" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
