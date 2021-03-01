@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InventoryModelStoreContainer" CdmEntityContainer="InventoryEntities">
+    <EntitySetMapping Name="NewInventories">
+      <EntityTypeMapping TypeName="InventoryModel.NewInventory">
+        <MappingFragment StoreEntitySet="NewInventory">
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="InventoryType" ColumnName="InventoryType" />
+          <ScalarProperty Name="QuantityPurchased" ColumnName="QuantityPurchased" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="PurchaseReason" ColumnName="PurchaseReason" />
+          <ScalarProperty Name="PercentagePaid" ColumnName="PercentagePaid" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="TheSourceId" ColumnName="TheSourceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

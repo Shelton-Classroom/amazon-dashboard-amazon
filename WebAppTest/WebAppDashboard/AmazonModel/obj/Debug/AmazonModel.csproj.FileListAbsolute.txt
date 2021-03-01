@@ -5,7 +5,6 @@ D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\bi
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\bin\Debug\EntityFramework.SqlServer.dll
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\bin\Debug\EntityFramework.xml
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\bin\Debug\EntityFramework.SqlServer.xml
-D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.csprojAssemblyReference.cache
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.csproj.CoreCompileInputs.cache
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.csproj.CopyComplete
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.dll
