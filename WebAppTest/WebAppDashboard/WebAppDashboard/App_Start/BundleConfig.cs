@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Configuration;
+using System.Web;
 using System.Web.Optimization;
 
 namespace WebAppDashboard
@@ -23,8 +24,8 @@ namespace WebAppDashboard
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/yeti.css"));
+                      $"~/Content/{ConfigurationManager.AppSettings["bootstrap"]}.css",
+                      "~/Content/Site.css"));
         }
     }
 }

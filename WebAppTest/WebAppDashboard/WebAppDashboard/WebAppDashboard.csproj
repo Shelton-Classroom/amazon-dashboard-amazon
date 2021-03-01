@@ -152,6 +152,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Inventory\Views\web.config" />
     <Content Include="Areas\Inventory\Views\Inventory\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\Shared\_Inventory.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -177,13 +178,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Inventory\_Inventory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Inventory\Data\" />
-    <Folder Include="Areas\Inventory\Views\Shared\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Inventory\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -197,12 +197,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AmazonModel\AmazonModel.csproj">
-      <Project>{d42516a6-a07d-4f69-904f-072bd7280a4d}</Project>
-      <Name>AmazonModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,4 +5,11 @@ RH - Changed Order Area to Purchase Area (Company Purchases)
 
 
 2/28/2021
-RH - Added AmazonModel: NewInventory & ExpenseCapture
+RH - Added AmazonModel: Inventory & ExpenseCapture
+added Inventory controller
+added Inventory Index.cshtml
+added Inventory button to home page
+
+3/1/2021 
+RH -Need to review.  I had a system issue when loading to school server and fixed most of it
+still need to review to what was lost when my system froze

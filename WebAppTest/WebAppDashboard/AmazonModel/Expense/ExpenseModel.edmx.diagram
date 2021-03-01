@@ -4,10 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ca54acc47fe5496b86fbcfbd4e4b6d3d" Name="Diagram1">
-        <EntityTypeShape EntityType="ExpenseModel.ExpenseCapture" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ExpenseModel.ExpenseType" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <AssociationConnector Association="ExpenseModel.FK_974" ManuallyRouted="false" />
+      <Diagram DiagramId="44af708ebc584ed08788ed6aa3b07f57" Name="Diagram1">
+        <EntityTypeShape EntityType="ExpensesModel.ExpenseCapture" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

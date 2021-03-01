@@ -9,3 +9,4 @@ D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\ob
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.csproj.CopyComplete
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.dll
 D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.pdb
+D:\2021 ITP298\amazon-dashboard-amazon\WebAppTest\WebAppDashboard\AmazonModel\obj\Debug\AmazonModel.csprojAssemblyReference.cache

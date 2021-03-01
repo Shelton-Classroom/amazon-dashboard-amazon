@@ -19,7 +19,5 @@ namespace AmazonModel.Expense
         public Nullable<decimal> ExpenseAmount { get; set; }
         public int MerchantId { get; set; }
         public int ExpenseCode { get; set; }
-    
-        public virtual ExpenseType ExpenseType { get; set; }
     }
 }

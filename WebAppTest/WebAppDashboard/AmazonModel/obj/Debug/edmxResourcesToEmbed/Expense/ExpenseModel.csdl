@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="ExpenseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="ExpensesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="ExpenseCapture">
     <Key>
       <PropertyRef Name="ExpenseCaptureId" />
@@ -9,34 +9,8 @@
     <Property Name="ExpenseAmount" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="MerchantId" Type="Int32" Nullable="false" />
     <Property Name="ExpenseCode" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="ExpenseType" Relationship="Self.FK_974" FromRole="ExpenseCapture" ToRole="ExpenseType" />
   </EntityType>
-  <EntityType Name="ExpenseType">
-    <Key>
-      <PropertyRef Name="ExpenseCode" />
-    </Key>
-    <Property Name="ExpenseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ExpenseCode" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="ExpenseCaptures" Relationship="Self.FK_974" FromRole="ExpenseType" ToRole="ExpenseCapture" />
-  </EntityType>
-  <Association Name="FK_974">
-    <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="1" />
-    <End Role="ExpenseCapture" Type="Self.ExpenseCapture" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ExpenseType">
-        <PropertyRef Name="ExpenseCode" />
-      </Principal>
-      <Dependent Role="ExpenseCapture">
-        <PropertyRef Name="ExpenseCode" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityContainer Name="ExpenseEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="ExpensesEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="ExpenseCaptures" EntityType="Self.ExpenseCapture" />
-    <EntitySet Name="ExpenseTypes" EntityType="Self.ExpenseType" />
-    <AssociationSet Name="FK_974" Association="Self.FK_974">
-      <End Role="ExpenseType" EntitySet="ExpenseTypes" />
-      <End Role="ExpenseCapture" EntitySet="ExpenseCaptures" />
-    </AssociationSet>
   </EntityContainer>
 </Schema>

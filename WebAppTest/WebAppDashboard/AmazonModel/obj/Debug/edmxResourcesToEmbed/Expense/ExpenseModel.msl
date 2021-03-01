@@ -1,21 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ExpenseModelStoreContainer" CdmEntityContainer="ExpenseEntities">
+  <EntityContainerMapping StorageEntityContainer="ExpensesModelStoreContainer" CdmEntityContainer="ExpensesEntities">
     <EntitySetMapping Name="ExpenseCaptures">
-      <EntityTypeMapping TypeName="ExpenseModel.ExpenseCapture">
+      <EntityTypeMapping TypeName="ExpensesModel.ExpenseCapture">
         <MappingFragment StoreEntitySet="ExpenseCapture">
           <ScalarProperty Name="ExpenseCaptureId" ColumnName="ExpenseCaptureId" />
           <ScalarProperty Name="ExpenseDate" ColumnName="ExpenseDate" />
           <ScalarProperty Name="ExpenseAmount" ColumnName="ExpenseAmount" />
           <ScalarProperty Name="MerchantId" ColumnName="MerchantId" />
-          <ScalarProperty Name="ExpenseCode" ColumnName="ExpenseCode" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ExpenseTypes">
-      <EntityTypeMapping TypeName="ExpenseModel.ExpenseType">
-        <MappingFragment StoreEntitySet="ExpenseType">
-          <ScalarProperty Name="ExpenseName" ColumnName="ExpenseName" />
           <ScalarProperty Name="ExpenseCode" ColumnName="ExpenseCode" />
         </MappingFragment>
       </EntityTypeMapping>

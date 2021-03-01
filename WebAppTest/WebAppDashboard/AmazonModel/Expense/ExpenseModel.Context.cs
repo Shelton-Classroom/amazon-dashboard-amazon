@@ -13,10 +13,10 @@ namespace AmazonModel.Expense
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ExpenseEntities : DbContext
+    public partial class ExpensesEntities : DbContext
     {
-        public ExpenseEntities()
-            : base("name=ExpenseEntities")
+        public ExpensesEntities()
+            : base("name=ExpensesEntities")
         {
         }
     
@@ -26,6 +26,5 @@ namespace AmazonModel.Expense
         }
     
         public virtual DbSet<ExpenseCapture> ExpenseCaptures { get; set; }
-        public virtual DbSet<ExpenseType> ExpenseTypes { get; set; }
     }
 }
