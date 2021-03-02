@@ -10,7 +10,7 @@ body {
     /* color: #e690e6; */
     color: #353535;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     background: #f3f6ff;
 }
 
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-family: 'Source Code Pro', monospace;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 @media(min-width: 992px) {
