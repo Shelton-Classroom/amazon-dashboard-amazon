@@ -14,7 +14,59 @@
     <Property Name="ItemId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="TheSourceId" Type="Int32" />
   </EntityType>
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="OrderItemId" />
+    </Key>
+    <Property Name="OrderItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderItemNumberId" Type="Int64" Nullable="false" />
+    <Property Name="SKU" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CurrencyType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CurrencyConversionDate" Type="DateTime" Precision="7" />
+    <Property Name="CurrencyConversionRate" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ItemName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ListingId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="UnitTax" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ShippingFee" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ShippingFeeTax" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="QuantityPurchased" Type="Int32" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ItemFees" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ItemCondition" Type="Int32" />
+    <Property Name="ItemSource" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ItemCost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="OriginalAmount" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="SalesOrder">
+    <Key>
+      <PropertyRef Name="SalesId" />
+    </Key>
+    <Property Name="SalesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AltOrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentsDate" Type="DateTime" Precision="7" />
+    <Property Name="PaymentTransactionId" Type="Int64" />
+    <Property Name="OrderTotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PurchaseDate" Type="DateTime" Precision="7" />
+    <Property Name="BatchId" Type="Int64" />
+    <Property Name="BuyerEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BuyerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ShippingMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ShippingCarrier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tracking" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MerchantId" Type="Int32" Nullable="false" />
+    <Property Name="MarketplaceId" Type="Int32" Nullable="false" />
+  </EntityType>
   <EntityContainer Name="InventoryEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="NewInventories" EntityType="Self.NewInventory" />
+    <EntitySet Name="OrderItems" EntityType="Self.OrderItem" />
+    <EntitySet Name="SalesOrders" EntityType="Self.SalesOrder" />
   </EntityContainer>
 </Schema>

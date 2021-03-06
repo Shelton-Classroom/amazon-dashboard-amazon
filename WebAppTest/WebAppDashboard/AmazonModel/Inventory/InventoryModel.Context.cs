@@ -26,5 +26,7 @@ namespace AmazonModel.Inventory
         }
     
         public virtual DbSet<NewInventory> NewInventories { get; set; }
+        public virtual DbSet<OrderItem> OrderItems { get; set; }
+        public virtual DbSet<SalesOrder> SalesOrders { get; set; }
     }
 }

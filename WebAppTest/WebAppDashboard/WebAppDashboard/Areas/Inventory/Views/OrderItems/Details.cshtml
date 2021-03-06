@@ -1,0 +1,187 @@
+﻿@model AmazonModel.Inventory.OrderItem
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Inventory/Views/Shared/_Inventory.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderItemNumberId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderItemNumberId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SKU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SKU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrencyType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrencyType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrencyConversionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrencyConversionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrencyConversionRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrencyConversionRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UPC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UPC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ListingId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ListingId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitTax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitTax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShippingFee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShippingFee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShippingFeeTax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShippingFeeTax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantityPurchased)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantityPurchased)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemFees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemFees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemCondition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemCondition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemSource)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemSource)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OriginalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OriginalAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
