@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WebAppTest",
+    "\\WebAppTest\\WebAppDashboard"
   ],
-  "SelectedNode": "\\WebAppDashboard.sln (WebAppTest\\WebAppDashboard\\WebAppDashboard.sln)",
+  "SelectedNode": "\\WebAppTest\\WebAppDashboard\\WebAppDashboard.sln",
   "PreviewInSolutionExplorer": false
 }
