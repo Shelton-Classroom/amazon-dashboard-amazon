@@ -1,0 +1,154 @@
+﻿@model IEnumerable<AmazonModel.Inventory.OrderItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Inventory/Views/Shared/_Inventory.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderItemNumberId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SKU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrencyType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrencyConversionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrencyConversionRate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UPC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ListingId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitTax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShippingFee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShippingFeeTax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuantityPurchased)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemFees)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemCondition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ItemCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OriginalAmount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderItemNumberId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SKU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrencyType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrencyConversionDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrencyConversionRate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UPC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ListingId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitTax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShippingFee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShippingFeeTax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuantityPurchased)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemFees)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemCondition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OriginalAmount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OrderItemId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OrderItemId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OrderItemId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -58,6 +58,22 @@ Add Custom Tiles to dashboard
 Issues:
 Need to synch code first with GitHub, add project and then push(Will meet with Amanda on this)
 
+PIG 3/06/2021
+Progress:
+Inventory scaffolding complete
+Found that I will be using HighChart to create Graphs/Charts
+Synched code with GitHub, add project and then push(Met with Amanda on this)
+
+Goals:
+Create Submenus for Inventory-NewInventory/OrderItems/SalesOrder
+Add Expense scaffolding 
+Add Custom Graphs?Charts to dashboard
+
+
+Issues:
+OrderItems Duplicate controller that I need to locate and remove
+
+
 
 
 

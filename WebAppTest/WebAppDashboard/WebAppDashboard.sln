@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppDashboard", "WebAppDashboard\WebAppDashboard.csproj", "{8A126784-7F62-44C3-8B97-6202976B8915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonModel", "AmazonModel\AmazonModel.csproj", "{D42516A6-A07D-4F69-904F-072BD7280A4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonModel", "AmazonModel\AmazonModel.csproj", "{AA36D2C2-67A2-4D7F-9E1D-FB8A3D320C64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8A126784-7F62-44C3-8B97-6202976B8915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A126784-7F62-44C3-8B97-6202976B8915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A126784-7F62-44C3-8B97-6202976B8915}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D42516A6-A07D-4F69-904F-072BD7280A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D42516A6-A07D-4F69-904F-072BD7280A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D42516A6-A07D-4F69-904F-072BD7280A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D42516A6-A07D-4F69-904F-072BD7280A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA36D2C2-67A2-4D7F-9E1D-FB8A3D320C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA36D2C2-67A2-4D7F-9E1D-FB8A3D320C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA36D2C2-67A2-4D7F-9E1D-FB8A3D320C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA36D2C2-67A2-4D7F-9E1D-FB8A3D320C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

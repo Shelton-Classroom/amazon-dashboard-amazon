@@ -127,32 +127,164 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\Inventory\Controllers\InventoryController.cs" />
+    <Compile Include="Areas\Inventory\Controllers\NewInventoriesController.cs" />
+    <Compile Include="Areas\Inventory\Controllers\OrderItemsController.cs" />
+    <Compile Include="Areas\Inventory\Controllers\SalesOrdersController.cs" />
     <Compile Include="Areas\Inventory\InventoryAreaRegistration.cs" />
+    <Compile Include="Areas\Inventory\OrderItemsController.cs" />
+    <Compile Include="Areas\NewInventoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="obj\Release\.NETFramework,Version=v4.5.1.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\AmazonModel.dll" />
+    <Content Include="bin\AmazonModel.pdb" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebAppDashboard.dll" />
+    <Content Include="bin\WebAppDashboard.pdb" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Yeti.css" />
-    <Content Include="..\..\..\..\..\BackUp Amazon Project\ChangeLog.txt">
-      <Link>Documentation\ChangeLog.txt</Link>
-    </Content>
+    <Content Include="Documentation\ChangeLog.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\WebAppDashboard.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\WebAppDashboard.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Site.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Yeti.css" />
+    <Content Include="obj\Release\Package\PackageTmp\favicon.ico" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="obj\Release\Package\PackageTmp\Global.asax" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.4.1.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery.validate.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery.validate.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\modernizr-2.8.3.js" />
+    <Content Include="obj\Release\WebAppDashboard.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\WebAppDashboard.dll" />
+    <Content Include="obj\Release\WebAppDashboard.pdb" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
+    <Content Include="Properties\PublishProfiles\FolderProfile1.pubxml.user" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Inventory\Views\web.config" />
-    <Content Include="Areas\Inventory\Views\Inventory\Index.cshtml" />
     <Content Include="Areas\Inventory\Views\Shared\_Inventory.cshtml" />
+    <Content Include="bin\AmazonModel.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\WebAppDashboard.dll.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Areas\Inventory\Views\Inventory\Index.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Areas\Inventory\Views\Shared\_Inventory.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Areas\Inventory\Views\web.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap-theme.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css.map" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.4.1.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Home\About.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Home\Contact.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Home\Index.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Inventory\_Inventory.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Shared\Error.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\Web.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Views\_ViewStart.cshtml" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="obj\Release\WebAppDashboard.csproj.CopyComplete" />
+    <Content Include="obj\Release\WebAppDashboard.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Release\WebAppDashboard.csprojAssemblyReference.cache" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Create.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Delete.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Details.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Edit.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\OrderItems\Create.cshtml" />
+    <Content Include="Areas\Inventory\Views\OrderItems\Delete.cshtml" />
+    <Content Include="Areas\Inventory\Views\OrderItems\Details.cshtml" />
+    <Content Include="Areas\Inventory\Views\OrderItems\Edit.cshtml" />
+    <Content Include="Areas\Inventory\Views\OrderItems\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Create.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Delete.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Details.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Edit.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -183,7 +315,15 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Inventory\Data\" />
+    <Folder Include="bin\app.publish\" />
     <Folder Include="Models\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Release\Package\PackageTmp\Documentation\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\Areas\Inventory\Views\" />
+    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\Views\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="obj\Release\TransformWebConfig\transformed\Areas\Inventory\Views\" />
+    <Folder Include="obj\Release\TransformWebConfig\transformed\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -200,7 +340,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AmazonModel\AmazonModel.csproj">
-      <Project>{d42516a6-a07d-4f69-904f-072bd7280a4d}</Project>
+      <Project>{aa36d2c2-67a2-4d7f-9e1d-fb8a3d320c64}</Project>
       <Name>AmazonModel</Name>
     </ProjectReference>
   </ItemGroup>
