@@ -1,6 +1,0 @@
-﻿New Change Log
-
-3/6/2021 Added Scaffolding :  
-NewInventory
-OrderItem
-SalesOrder
