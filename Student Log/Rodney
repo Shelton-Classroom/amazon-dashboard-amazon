@@ -33,8 +33,16 @@ DATE	TOPIC	DISPOSITION
 
 02/22/21	GitHub	Tyler and I spoke with Amanda on Sunday night to discuss the process of commit, fetch, pull to sync our collective code
 02/23/21	SQL	Built Trigger to update CurrencyConversionDate when CurrencyConversionRate is updated with a value greater than 0.
-02/23/21	SQL	Built the basis of the first SQL View For Items Sold Dashboard KPI
-
+02/23/21	SQL	Built the basis of the first SQL View for Items Sold Dashboard KPI
+02/25/21	SQL	All Data for 2020 has been loaded and verified
+02/27/21	SQL	Write Table Value Functions to support dashboard and reports.  This will entail a minimum of 10 functions
+03/01/21	SQL	Setup and tested Table Value Function to determine periodic refunds for Sales Order Report. This has been tested on the local database and has not be moved to the school server yet Name: UdfGetPeriodicRefunds
+03/01/21	SQL	Setup and tested Table Value Function to determine periodic return shipping amounts for Sales Order Report. This has been tested on the local database and has not be moved to the school server yet Name: UdfGetPeriodicReturnShipping
+03/02/21	C#	Began the process to create a button to identify the date selection this will be used by the sales order report, dashboard graphs and set the default
+03/05/21	C#	Began the process of creating the Sales Order Report
+03/06/21	SQL	Refined the Table Value Function to create the Sales Order Report
+03/07/21	C#	Worked for a few hours with Tyler and Caleb to resolve the issue with the ship station API.  Have started a process to work with technical support at Ship Station.  Initiated email to request help and/or demo
+03/06/21	GITHUB	Completed sync and process to synchronize environment.  
 Issues
 DATE	TOPIC	DISPOSITION
 01/14/21	GIT Classroom	Except for Laxman all of us are having trouble accessing GIT Classroom. RESOLVED
@@ -48,6 +56,10 @@ DATE	TOPIC	DISPOSITION
 02/06/21	SQL	Having trouble formatting the Date properly for individual columns.  I am going to test using the format command to properly load the data into the table
 02/07/21	SQL	Will need to limit the data to 2020 thru 2021 (Current).  The 2019 needs a lot more to assemble the data into a single excel file.  This is because of the Amazon.Com data retention policy.  Would have 
 02/22/21		Surprisingly, no issues this week to report
+02/28/21	SQL	Resolve issue with Trigger code for currency update
+02/28/21	SQL	While the code will compile there is an issue with a function calling another function that needs to be researched and resolved
+03/06/21	GITHUB	Indicated little or no progress after sync.  So I am still waiting for last weeks updates 
+		
 		
 Goals
 DATE	TOPIC	DISPOSITION
@@ -68,5 +80,11 @@ DATE	TOPIC	DISPOSITION
 02/23/21	Data Entry	Load the Excel data files to the shared drive so that Matthew can begin the data entry process.  He will be entering all new inventory purchases for 2020 and 2021
 02/23/21	Transaction Flow	Begin the process of documenting the order flow with indication of time issues
 02/24/21	C#	Review Bob’s YouTube helper/partial page video
+02/25/21	C#	Begin to write the code to update the database with Tyler
+02/25/21	C#	Begin to write the code to generate the periodic sales report
+03/07/21	SQL	Finalize the sales order table value function and finish testing.  Load the table value functions to JSRCC database
+03/07/21	C#	Layout and write the code to produce the report
+03/07/21	C#	Work with Ship Station to get the needed technical support
+
 
 		
