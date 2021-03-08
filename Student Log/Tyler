@@ -10,7 +10,11 @@ G- Have GitHub classroom connected to upload code. Figure out how to use the aut
 P- The api for Seller Active is pulling data from the website now.
 I- No issues currently
 G- Start working on Ship Station api
-2/15-2/21/21
+2/15-2/21/2021
 P- Authorization for ShipStation is working
 I- GitHub issue
 G- Finish ShipStation api
+3/1-3/7/2021
+P- No new progress on the api
+I- May not have the correct endpoint for ShipStation api. Contacted ShipStation to get that issue resolved to help finish the api.
+G- Get in contact with ShipStation to get the correct info to get data from the ShipStation api.
