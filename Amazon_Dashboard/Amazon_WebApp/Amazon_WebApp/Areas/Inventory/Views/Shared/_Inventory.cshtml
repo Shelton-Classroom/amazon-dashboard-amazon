@@ -1,1 +1,20 @@
-﻿
+﻿@{
+    ViewBag.Title = "Inventory X";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Inventory", "Index", "Inventory", new { @area = "Inventory" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Expenses", "Index", "Expenses", new { @area = "Expenses" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Reporting", "Index", "Reporting", new { @area = "Reporting" }, new { @class = "navbar-brand" })</li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+</div>
+
