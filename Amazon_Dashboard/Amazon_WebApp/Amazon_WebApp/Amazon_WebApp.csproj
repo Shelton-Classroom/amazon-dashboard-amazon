@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,9 +126,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Expenses\Controllers\ExpenseCapturesController.cs" />
     <Compile Include="Areas\Expenses\Controllers\ExpensesController.cs" />
     <Compile Include="Areas\Expenses\ExpensesAreaRegistration.cs" />
     <Compile Include="Areas\Inventory\Controllers\InventoryController.cs" />
+    <Compile Include="Areas\Inventory\Controllers\NewInventoriesController.cs" />
+    <Compile Include="Areas\Inventory\Controllers\SalesOrdersController.cs" />
     <Compile Include="Areas\Inventory\InventoryAreaRegistration.cs" />
     <Compile Include="Areas\Reporting\Controllers\ReportingController.cs" />
     <Compile Include="Areas\Reporting\ReportingAreaRegistration.cs" />
@@ -149,6 +158,24 @@
     <Content Include="Areas\Expenses\Views\Expenses\Index.cshtml" />
     <Content Include="Areas\Reporting\Views\Reporting\Index.cshtml" />
     <Content Include="Areas\Inventory\Views\Inventory\Index.cshtml" />
+    <Content Include="Areas\Expenses\Views\Shared\_Expenses.cshtml" />
+    <Content Include="Areas\Inventory\Views\Shared\_Inventory.cshtml" />
+    <Content Include="Areas\Reporting\Views\Shared\_Reporting.cshtml" />
+    <Content Include="Areas\Expenses\Views\ExpenseCaptures\Create.cshtml" />
+    <Content Include="Areas\Expenses\Views\ExpenseCaptures\Delete.cshtml" />
+    <Content Include="Areas\Expenses\Views\ExpenseCaptures\Details.cshtml" />
+    <Content Include="Areas\Expenses\Views\ExpenseCaptures\Edit.cshtml" />
+    <Content Include="Areas\Expenses\Views\ExpenseCaptures\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Create.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Delete.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Details.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Edit.cshtml" />
+    <Content Include="Areas\Inventory\Views\NewInventories\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Create.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Delete.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Details.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Edit.cshtml" />
+    <Content Include="Areas\Inventory\Views\SalesOrders\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -178,11 +205,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Expenses\Data\" />
-    <Folder Include="Areas\Expenses\Views\Shared\" />
     <Folder Include="Areas\Inventory\Data\" />
-    <Folder Include="Areas\Inventory\Views\Shared\" />
     <Folder Include="Areas\Reporting\Data\" />
-    <Folder Include="Areas\Reporting\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +221,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AmazonModel\AmazonModel.csproj">
+      <Project>{6d1572ba-db81-4bde-9bef-f9a07002e9a6}</Project>
+      <Name>AmazonModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,11 @@
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\AmazonModel.dll.config
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\AmazonModel.dll
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\AmazonModel.pdb
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.dll
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.xml
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.csproj.CoreCompileInputs.cache
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.csproj.CopyComplete
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.dll
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.pdb

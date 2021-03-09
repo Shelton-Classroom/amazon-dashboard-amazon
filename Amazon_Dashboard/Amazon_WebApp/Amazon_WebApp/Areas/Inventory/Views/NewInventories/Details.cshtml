@@ -1,0 +1,83 @@
+﻿@model AmazonModel.Inventory.NewInventory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Expenses/Views/Shared/_Expenses.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NewInventory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InventoryType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InventoryType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantityPurchased)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantityPurchased)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseReason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentagePaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercentagePaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TheSourceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TheSourceId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PurchaseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
