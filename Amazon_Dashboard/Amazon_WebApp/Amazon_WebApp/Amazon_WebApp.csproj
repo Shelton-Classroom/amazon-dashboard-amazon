@@ -120,6 +120,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Expenses\Controllers\ExpensesController.cs" />
+    <Compile Include="Areas\Expenses\ExpensesAreaRegistration.cs" />
+    <Compile Include="Areas\Inventory\Controllers\InventoryController.cs" />
+    <Compile Include="Areas\Inventory\InventoryAreaRegistration.cs" />
+    <Compile Include="Areas\Reporting\Controllers\ReportingController.cs" />
+    <Compile Include="Areas\Reporting\ReportingAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -137,6 +143,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Inventory\Views\web.config" />
+    <Content Include="Areas\Expenses\Views\web.config" />
+    <Content Include="Areas\Reporting\Views\web.config" />
+    <Content Include="Areas\Expenses\Views\Expenses\Index.cshtml" />
+    <Content Include="Areas\Reporting\Views\Reporting\Index.cshtml" />
+    <Content Include="Areas\Inventory\Views\Inventory\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -165,6 +177,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Expenses\Data\" />
+    <Folder Include="Areas\Expenses\Views\Shared\" />
+    <Folder Include="Areas\Inventory\Data\" />
+    <Folder Include="Areas\Inventory\Views\Shared\" />
+    <Folder Include="Areas\Reporting\Data\" />
+    <Folder Include="Areas\Reporting\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
