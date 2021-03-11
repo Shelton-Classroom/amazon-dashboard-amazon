@@ -9,3 +9,15 @@ D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonMo
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.csproj.CopyComplete
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.dll
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.pdb
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\AmazonModel.dll.config
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\AmazonModel.dll
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\AmazonModel.pdb
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.dll
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.xml
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.csprojAssemblyReference.cache
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.csproj.CoreCompileInputs.cache
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.csproj.CopyComplete
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.dll
+C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\AmazonModel\obj\Debug\AmazonModel.pdb

@@ -136,6 +136,7 @@
     <Compile Include="Areas\Reporting\Controllers\ReportingController.cs" />
     <Compile Include="Areas\Reporting\ReportingAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SOReportingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,6 +209,7 @@
     <Folder Include="Areas\Inventory\Data\" />
     <Folder Include="Areas\Reporting\Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\SOReporting\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
