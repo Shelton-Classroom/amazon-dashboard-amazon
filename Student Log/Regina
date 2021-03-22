@@ -74,6 +74,23 @@ Issues:
 OrderItems Duplicate controller that I need to locate and remove
 
 
+PIG 3/22/2021
+Progress:
+Created Submenus for Inventory-NewInventory/OrderItems/SalesOrder
+Added Expense scaffolding 
+Added Custom Graphs HighCharts 
+
+Goals:
+Connect graphs and charts to main project Reports section
+add drop down and search function
+add $ to prices
+
+
+Issues:
+Views need to be complete not all links working
+Unable to upload to server without and error.  Searched in Route Conf file.
+
+
 
 
 
