@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InventoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NewInventory">
+    <Key>
+      <PropertyRef Name="PurchaseId" />
+    </Key>
+    <Property Name="PurchaseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="InventoryType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="QuantityPurchased" Type="Int32" Nullable="false" />
+    <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PurchaseReason" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PercentagePaid" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ItemId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TheSourceId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SalesOrder">
+    <Key>
+      <PropertyRef Name="SalesId" />
+    </Key>
+    <Property Name="SalesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AltOrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentsDate" Type="DateTime" Precision="7" />
+    <Property Name="PaymentTransactionId" Type="Int64" />
+    <Property Name="OrderTotalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PurchaseDate" Type="DateTime" Precision="7" />
+    <Property Name="BatchId" Type="Int64" />
+    <Property Name="BuyerEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BuyerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ShippingMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ShippingCarrier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tracking" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MerchantId" Type="Int32" Nullable="false" />
+    <Property Name="MarketplaceId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="InventoryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NewInventories" EntityType="Self.NewInventory" />
+    <EntitySet Name="SalesOrders" EntityType="Self.SalesOrder" />
+  </EntityContainer>
+</Schema>

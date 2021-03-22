@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InventoryModelStoreContainer" CdmEntityContainer="InventoryEntities">
+    <EntitySetMapping Name="NewInventories">
+      <EntityTypeMapping TypeName="InventoryModel.NewInventory">
+        <MappingFragment StoreEntitySet="NewInventory">
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="InventoryType" ColumnName="InventoryType" />
+          <ScalarProperty Name="QuantityPurchased" ColumnName="QuantityPurchased" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="PurchaseReason" ColumnName="PurchaseReason" />
+          <ScalarProperty Name="PercentagePaid" ColumnName="PercentagePaid" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="TheSourceId" ColumnName="TheSourceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesOrders">
+      <EntityTypeMapping TypeName="InventoryModel.SalesOrder">
+        <MappingFragment StoreEntitySet="SalesOrder">
+          <ScalarProperty Name="SalesId" ColumnName="SalesId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="AltOrderId" ColumnName="AltOrderId" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="PaymentsDate" ColumnName="PaymentsDate" />
+          <ScalarProperty Name="PaymentTransactionId" ColumnName="PaymentTransactionId" />
+          <ScalarProperty Name="OrderTotalPrice" ColumnName="OrderTotalPrice" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="BuyerEmail" ColumnName="BuyerEmail" />
+          <ScalarProperty Name="BuyerName" ColumnName="BuyerName" />
+          <ScalarProperty Name="ShippingMethod" ColumnName="ShippingMethod" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ShippingCarrier" ColumnName="ShippingCarrier" />
+          <ScalarProperty Name="Tracking" ColumnName="Tracking" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="MerchantId" ColumnName="MerchantId" />
+          <ScalarProperty Name="MarketplaceId" ColumnName="MarketplaceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
