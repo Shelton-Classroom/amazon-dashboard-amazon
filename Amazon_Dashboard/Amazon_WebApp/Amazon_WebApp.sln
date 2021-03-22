@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon_WebApp", "Amazon_Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonModel", "AmazonModel\AmazonModel.csproj", "{6D1572BA-DB81-4BDE-9BEF-F9A07002E9A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighChart_Graphs", "HighChart_Graphs\HighChart_Graphs.csproj", "{A41E1E82-92DE-4E18-95C4-3A2FCFBDBB38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6D1572BA-DB81-4BDE-9BEF-F9A07002E9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D1572BA-DB81-4BDE-9BEF-F9A07002E9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D1572BA-DB81-4BDE-9BEF-F9A07002E9A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41E1E82-92DE-4E18-95C4-3A2FCFBDBB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41E1E82-92DE-4E18-95C4-3A2FCFBDBB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41E1E82-92DE-4E18-95C4-3A2FCFBDBB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41E1E82-92DE-4E18-95C4-3A2FCFBDBB38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
