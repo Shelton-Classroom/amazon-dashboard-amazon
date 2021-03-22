@@ -1,0 +1,33 @@
+Sprint : Amazon Dashboard
+PROGRESS	TOPIC	DISCUSSION
+03/01/2021	MicroApps	Continues to improve user documentation.  All tables and fields are nearly 100% documents.  This includes a plan to enhance other areas of documentation with the detail of the user manual
+	Front END	The corporate website continues to be polished and enhanced with information.  Each week new strides were made with each page of the corporate website
+	Data Entry	Data entry and the QA process has begun with the expense capture and costing of new inventory.  Once the data has been completely entered, we will make the enhancements suggested by those team members doing the data input 
+	API	The critical path process of retrieving data from Ship Station has been resolved since our last sprint.  We are now receiving data from the website. 
+	Graph	Continued to work on processing the graphs for the dashboard
+	SQL	Pushed majority of the table value functions to the school’s SQL Database
+		
+		
+		
+		
+		
+		
+
+ISSUES	TOPICS	DISCUSSION
+ 	C#	Resolve the rendering issues with the sales report partial page.  
+	C#	Define, design, and develop the process to load the retrieved information from the API to the database
+	SQL	Matthew needs access to SQL Server to update the documentation
+	Front End	Team members need to complete the biographies for inclusion with the corporate website
+		
+		
+		
+
+GOALS	TOPICS	DISCUSSION
+	SQL	Resolve the computational issue with the Refund Statistics Table Value Function
+	C#	Resolve the rendering issues with the sales report partial page.  Once this partial page is working the other partial pages required to complete the sales order periodic report will move rapidly as they follow a similar creation process.
+	C#	Process the data from the Seller Active and Ship Station APIs and load sales orders and shipment information properly to the SQL database.
+	C#	Reading the table value functions a producing the various dashboard graphs
+	Front End	Finish collecting the biographies and crafting the team page
+	Front End	Work on login process and internal website CSS
+	MicroApps	Continue organizing the User Manual, building the final presentation, and updating SQL documentation 
+		
