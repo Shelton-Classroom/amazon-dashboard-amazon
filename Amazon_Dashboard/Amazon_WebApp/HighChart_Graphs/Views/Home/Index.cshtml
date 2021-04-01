@@ -5,92 +5,140 @@
 
 
 
-  
-    <div class="col-md-12">
-        <h2>Reporting Graphs and Chart are to be pulled from server</h2>
-       
+
+<div class="col-md-12">
+    <h2>Reporting Graphs and Chart are to be pulled from server</h2>
 
 
 
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/modules/series-label.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
-        <script src="https://code.highcharts.com/modules/export-data.js"></script>
-        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-        <figure class="highcharts-figure">
-            <div id="container"></div>
-            <p class="highcharts-description">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-            </p>
-        </figure>
-        <script>
-            Highcharts.chart('container', {
-                title: {
-                    text: 'Combination chart'
-                },
-                xAxis: {
-                    categories: ['Books', 'DVDs', 'VHS', 'CDs', 'Misc']
-                },
-                labels: {
-                    items: [{
-                        html: 'Total Distribution',
-                        style: {
-                            left: '50px',
-                            top: '18px',
-                            color: ( // theme
-                                Highcharts.defaultOptions.title.style &&
-                                Highcharts.defaultOptions.title.style.color
-                            ) || 'black'
-                        }
-                    }]
-                },
-                series: [{
-                    type: 'column',
-                    name: 'Amazon',
-                    data: [3, 2, 1, 3, 4]
-                }, {
-                    type: 'column',
-                    name: 'Ship Station',
-                    data: [2, 3, 5, 7, 6]
-                }, {
-                    type: 'column',
-                    name: 'Other',
-                    data: [4, 3, 3, 9, 0]
-                }, {
-                    type: 'spline',
-                    name: 'Average',
-                    data: [3, 2.67, 3, 6.33, 3.33],
-                    marker: {
-                        lineWidth: 2,
-                        lineColor: Highcharts.getOptions().colors[3],
-                        fillColor: 'white'
-                    }
-                }, {
-                    type: 'pie',
-                    name: 'Total consumption',
-                    data: [{
-                        name: 'Amazon',
-                        y: 13,
-                        color: Highcharts.getOptions().colors[0] // Amazon's color
-                    }, {
-                        name: 'Ship Station',
-                        y: 23,
-                        color: Highcharts.getOptions().colors[1] // Ship Station's color
-                    }, {
-                        name: 'Other',
-                        y: 19,
-                        color: Highcharts.getOptions().colors[2] // Regina's color
-                    }],
-                    center: [100, 80],
-                    size: 100,
-                    showInLegend: false,
-                    dataLabels: {
-                        enabled: false
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+
+        </p>
+    </figure>
+    <script>
+        Highcharts.chart('container', {
+            title: {
+                text: 'Combination chart'
+            },
+            xAxis: {
+                categories: ['Books', 'DVDs', 'VHS', 'CDs', 'Misc']
+            },
+            labels: {
+                items: [{
+                    html: 'Total Distribution',
+                    style: {
+                        left: '50px',
+                        top: '18px',
+                        color: ( // theme
+                            Highcharts.defaultOptions.title.style &&
+                            Highcharts.defaultOptions.title.style.color
+                        ) || 'black'
                     }
                 }]
-            });
+            },
+            series: [{
+                type: 'column',
+                name: 'Amazon',
+                data: [3, 2, 1, 3, 4]
+            }, {
+                type: 'column',
+                name: 'Ship Station',
+                data: [2, 3, 5, 7, 6]
+            }, {
+                type: 'column',
+                name: 'Other',
+                data: [4, 3, 3, 9, 0]
+            }, {
+                type: 'spline',
+                name: 'Average',
+                data: [3, 2.67, 3, 6.33, 3.33],
+                marker: {
+                    lineWidth: 2,
+                    lineColor: Highcharts.getOptions().colors[3],
+                    fillColor: 'white'
+                }
+            }, {
+                type: 'pie',
+                name: 'Total consumption',
+                data: [{
+                    name: 'Amazon',
+                    y: 13,
+                    color: Highcharts.getOptions().colors[0] // Amazon's color
+                }, {
+                    name: 'Ship Station',
+                    y: 23,
+                    color: Highcharts.getOptions().colors[1] // Ship Station's color
+                }, {
+                    name: 'Other',
+                    y: 19,
+                    color: Highcharts.getOptions().colors[2] // Regina's color
+                }],
+                center: [100, 80],
+                size: 100,
+                showInLegend: false,
+                dataLabels: {
+                    enabled: false
+                }
+            }]
+        });
 
-        </script>
+    </script>
+</div>
+</div>
+
+
+@{
+    ViewBag.Title = "Tiles";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/400x200" alt="..." />
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/400x200" alt="..." />
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/400x200" alt="..." />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/300x150" alt="..." />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/300x150" alt="..." />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/300x150" alt="..." />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="#" class="thumbnail">
+                <img src="http://placehold.it/300x150" alt="..." />
+            </a>
+        </div>
     </div>
 </div>
+
+
