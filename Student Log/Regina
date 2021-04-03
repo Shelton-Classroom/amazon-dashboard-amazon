@@ -74,21 +74,28 @@ Issues:
 OrderItems Duplicate controller that I need to locate and remove
 
 
-PIG 3/22/2021
+PIG 3/28/2021
 Progress:
-Created Submenus for Inventory-NewInventory/OrderItems/SalesOrder
+Removed OrderItems from project
+Created Submenus for Inventory-NewInventory/ExpenseCapture/SalesOrder
 Added Expense scaffolding 
-Added Custom Graphs HighCharts 
+Added  Charts/Graphs (HighCharts project) HTML, js
 
 Goals:
+Resolve partial page views
 Connect graphs and charts to main project Reports section
-add drop down and search function
-add $ to prices
+Add drop down and search function
+Add $ to prices
+add CSS to application
+Add Table to database for Users
+Add Login page
+
 
 
 Issues:
 Views need to be complete not all links working
 Unable to upload to server without and error.  Searched in Route Conf file.
+Broken code. Inventory_default duplicate
 
 
 

@@ -33,6 +33,7 @@ namespace AmazonAPI
         }
     }
 
+    // Inventory https://rest.selleractive.com:443/api/Inventory
     public class ProductVendor
     {
         public string Code { get; set; }
@@ -91,13 +92,13 @@ namespace AmazonAPI
         public bool? IsBuyBoxOwned { get; set; }
     }
 
-    public class BundledItem
-    {
-        public string SKU { get; set; }
-        public string Title { get; set; }
-        public int? Quantity { get; set; }
-        public int? AmountPerBundle { get; set; }
-    }
+    //public class BundledItem
+    //{
+    //    public string SKU { get; set; }
+    //    public string Title { get; set; }
+    //    public int? Quantity { get; set; }
+    //    public int? AmountPerBundle { get; set; }
+    //}
 
     public class SAInventory
     {
@@ -141,5 +142,95 @@ namespace AmazonAPI
         public List<Location> Locations { get; set; }
         public List<ProductSite> ProductSites { get; set; }
         public List<BundledItem> BundledItems { get; set; }
+    }
+
+    // Order https://rest.selleractive.com:443/api/Order
+    public class BundledItem
+    {
+        public string SKU { get; set; }
+        public string Title { get; set; }
+        public int QuantityOrdered { get; set; }
+        public int Cost { get; set; }
+        public string Location { get; set; }
+    }
+
+    public class OrderDetail
+    {
+        public int OrderDetailID { get; set; }
+        public string SiteItemID { get; set; }
+        public string OrderStatus { get; set; }
+        public DateTime? DateShipped { get; set; }
+        public string SKU { get; set; }
+        public string Title { get; set; }
+        public string Location { get; set; }
+        public int QuantityOrdered { get; set; }
+        public int? QuantityShipped { get; set; }
+        public int QuantityUnfillable { get; set; }
+        public string CurrencyISO { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal UnitPrice { get; set; }
+        public decimal UnitTax { get; set; }
+        public decimal? ShippingPrice { get; set; }
+        public decimal? ShippingTax { get; set; }
+        public int? ShippingDiscount { get; set; }
+        public string GiftMessage { get; set; }
+        public int? GiftWrapPrice { get; set; }
+        public int? GiftWrapTax { get; set; }
+        public string ProductOptions { get; set; }
+        public string ShippingServiceOrdered { get; set; }
+        public string ShippingServiceActual { get; set; }
+        public string ShippingTracking { get; set; }
+        public string ShippingTrackingUrl { get; set; }
+        public string ShippingActualWeight { get; set; }
+        public decimal? ShippingActualCharge { get; set; }
+        public string ShippingCarrier { get; set; }
+        public string Vendor { get; set; }
+        public List<BundledItem> BundledItems { get; set; }
+        public int? Cost { get; set; }
+        public string HSCode { get; set; }
+    }
+
+    public class GlobalShippingInfo
+    {
+        public int OrderID { get; set; }
+        public string ReferenceNumber { get; set; }
+        public int AddressID { get; set; }
+        public string Name { get; set; }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+        public string PostalCode { get; set; }
+    }
+
+    public class Order
+    {
+        public int OrderID { get; set; }
+        public string SiteOrderID { get; set; }
+        public string SellerOrderID { get; set; }
+        public string Site { get; set; }
+        public string OrderStatus { get; set; }
+        public DateTime DateOrdered { get; set; }
+        public string Name { get; set; }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string Address3 { get; set; }
+        public string City { get; set; }
+        public string StateOrRegion { get; set; }
+        public string Country { get; set; }
+        public string PostalCode { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public decimal PromotionDiscount { get; set; }
+        public string Note { get; set; }
+        public bool IsPrime { get; set; }
+        public bool IsGuaranteedDelivery { get; set; }
+        public DateTime LatestShipDate { get; set; }
+        public DateTime? LatestDeliveryDate { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
+        public GlobalShippingInfo GlobalShippingInfo { get; set; }
+        public string PaypalTransactionId { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 }
