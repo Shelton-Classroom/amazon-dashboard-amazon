@@ -22,3 +22,7 @@ G- Get in contact with ShipStation to get the correct info to get data from the 
 P- Have the both API's getting data and the model set up to use in the MVC
 I- Model not set up in the MVC so not able to connect with it in the API
 G- Help get the MVC set up
+4/5-4/11/2021
+P-Creating a timing function for the API
+I-No issues
+G-Finish the timing function for the API
