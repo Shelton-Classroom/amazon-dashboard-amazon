@@ -6,8 +6,9 @@
 <nav class="navbar navbar-expand-lg bg-dark">
     <div class="navbar-collapse collapse" id="navbarColor01">
         <ul class="nav navbar-nav">
-            <li>@Html.ActionLink("Inventory", "Index", "Inventory", new { @area = "Inventory" }, new { @class = "navbar-brand" })</li>
-            <li>@Html.ActionLink("Expenses", "Index", "Expenses", new { @area = "Expenses" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Inventory", "Index", "NewInventory", new { @area = "NewInventory" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("SalesOrder", "Create", "SalesOrder", new { @area = "SalesOrder" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Expenses", "Index", "ExpenseCapture", new { @area = "Expense" }, new { @class = "navbar-brand" })</li>
             <li>@Html.ActionLink("Reporting", "Index", "Reporting", new { @area = "Reporting" }, new { @class = "navbar-brand" })</li>
         </ul>
     </div>

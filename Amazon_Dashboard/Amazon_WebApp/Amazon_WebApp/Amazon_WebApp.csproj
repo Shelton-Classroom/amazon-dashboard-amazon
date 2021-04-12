@@ -158,7 +158,6 @@
     <Content Include="Areas\Reporting\Views\web.config" />
     <Content Include="Areas\Expenses\Views\Expenses\Index.cshtml" />
     <Content Include="Areas\Reporting\Views\Reporting\Index.cshtml" />
-    <Content Include="Areas\Inventory\Views\Inventory\Index.cshtml" />
     <Content Include="Areas\Expenses\Views\Shared\_Expenses.cshtml" />
     <Content Include="Areas\Inventory\Views\Shared\_Inventory.cshtml" />
     <Content Include="Areas\Reporting\Views\Shared\_Reporting.cshtml" />

@@ -53,7 +53,6 @@ D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.csproj.CopyComplete
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.dll
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.pdb
-D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.csprojAssemblyReference.cache
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\bin\EntityFramework.dll
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\bin\EntityFramework.SqlServer.dll
 D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\bin\EntityFramework.xml
@@ -124,3 +123,4 @@ C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_Web
 C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.csproj.CopyComplete
 C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.dll
 C:\Users\Rodney Layne\Source\Repos\Amazon-Dashboard1\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.pdb
+D:\AmazonDashboard\Amazon_Dashboard\Amazon_WebApp\Amazon_WebApp\obj\Debug\Amazon_WebApp.csprojAssemblyReference.cache

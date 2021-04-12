@@ -16,6 +16,14 @@
         <p></p>
         @Html.ActionLink(@HttpUtility.HtmlDecode("&#10070; Inventory &#10070; "), "Index", "Inventory", new { @area = "Inventory" }, new { @class = "btn btn-primary" })
     </div>
+    <div class="col-md-4">
+        <h2>Sales Orders</h2>
+        <p>
+            See your recent sales orders here.
+        </p>
+        <p></p>
+        @Html.ActionLink(@HttpUtility.HtmlDecode("&#10070; Sales Orders &#10070; "), "Index", "SalesOrders", new { @area = "SalesOrders" }, new { @class = "btn btn-primary" })
+    </div>
 
     <div class="col-md-4">
         <h2>Expense Management</h2>
@@ -23,7 +31,7 @@
             This area is where expenses can be searched and entered <br />
         </p>
         <p></p>
-        @Html.ActionLink(@HttpUtility.HtmlDecode("&#10070; Expenses &#10070; "), "Index", "Expenses", new { @area = "Expenses" }, new { @class = "btn btn-primary" })
+        @Html.ActionLink(@HttpUtility.HtmlDecode("&#10070; Expenses &#10070; "), "Index", "ExpenseCapture", new { @area = "ExpenseCapture" }, new { @class = "btn btn-primary" })
     </div>
 
     <div class="col-md-4">
