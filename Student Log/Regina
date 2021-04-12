@@ -96,13 +96,14 @@ Unable to upload to server without an error.  Searched in Route Conf file.
 Broken code. Inventory_default duplicate
 
 
-PIG 4/04/2021
+PIG 4/12/2021
 Progress:
+Resolved partial page views
 Added Table to database for Login/User
 Resolved--Routing & upload to server without error.  
 
 Goals:
-Resolve partial page views
+
 Connect graphs and charts to main project Reports section(On hold until performance issue is corrected)
 Add drop down and search function
 Add $ to prices
