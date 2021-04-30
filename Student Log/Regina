@@ -107,7 +107,6 @@ Goals:
 Connect graphs and charts to main project Reports section(On hold until performance issue is corrected)
 Add drop down and search function
 Add $ to prices
-Add CSS to application
 Add User names and passwords to User Table
 Add Login page
 
@@ -115,6 +114,28 @@ Add Login page
 Issues:
 Views need to be complete not all links working- 
 Performance issues on Sales Orders and Expenses due to the amount of data being pulled in
+
+
+
+PIG 4/26/2021
+Progress:
+Resolved - Views need to be complete not all links working- 
+Resolved - Performance issues on Expenses due to the amount of data being pulled in
+Removed - Sales Orders from project view
+Added $ to prices and Date format changed to 01/01/2021
+Laxman to create User names and passwords to User Table and Login page from Website
+Added Laxman's CSS to application
+
+Goals:
+Connect graphs and charts to main project 
+Add drop down and search function to Inventory and Expenses
+
+
+Issues:
+Need to resolve showing more than 1 chart or graph on the Main Page of app
+Working on data retrieval for the graphs and charts from SQL
+
+
 
 
 
