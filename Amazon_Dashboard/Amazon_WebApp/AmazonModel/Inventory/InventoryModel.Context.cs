@@ -12,6 +12,8 @@ namespace AmazonModel.Inventory
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class InventoryEntities : DbContext
     {
@@ -26,6 +28,35 @@ namespace AmazonModel.Inventory
         }
     
         public virtual DbSet<NewInventory> NewInventories { get; set; }
-        public virtual DbSet<SalesOrder> SalesOrders { get; set; }
+        public virtual DbSet<OrderItem> OrderItems { get; set; }
+        public virtual DbSet<SalesOrderInput> SalesOrderInputs { get; set; }
+    
+        [DbFunction("InventoryEntities", "UdfGetOrderMapBySales")]
+        public virtual IQueryable<UdfGetOrderMapBySales_Result> UdfGetOrderMapBySales(Nullable<System.DateTime> startDateRange, Nullable<System.DateTime> endDateRange)
+        {
+            var startDateRangeParameter = startDateRange.HasValue ?
+                new ObjectParameter("StartDateRange", startDateRange) :
+                new ObjectParameter("StartDateRange", typeof(System.DateTime));
+    
+            var endDateRangeParameter = endDateRange.HasValue ?
+                new ObjectParameter("EndDateRange", endDateRange) :
+                new ObjectParameter("EndDateRange", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<UdfGetOrderMapBySales_Result>("[InventoryEntities].[UdfGetOrderMapBySales](@StartDateRange, @EndDateRange)", startDateRangeParameter, endDateRangeParameter);
+        }
+    
+        [DbFunction("InventoryEntities", "UdfGetOrderMapCount")]
+        public virtual IQueryable<UdfGetOrderMapCount_Result> UdfGetOrderMapCount(Nullable<System.DateTime> startDateRange, Nullable<System.DateTime> endDateRange)
+        {
+            var startDateRangeParameter = startDateRange.HasValue ?
+                new ObjectParameter("StartDateRange", startDateRange) :
+                new ObjectParameter("StartDateRange", typeof(System.DateTime));
+    
+            var endDateRangeParameter = endDateRange.HasValue ?
+                new ObjectParameter("EndDateRange", endDateRange) :
+                new ObjectParameter("EndDateRange", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<UdfGetOrderMapCount_Result>("[InventoryEntities].[UdfGetOrderMapCount](@StartDateRange, @EndDateRange)", startDateRangeParameter, endDateRangeParameter);
+        }
     }
 }

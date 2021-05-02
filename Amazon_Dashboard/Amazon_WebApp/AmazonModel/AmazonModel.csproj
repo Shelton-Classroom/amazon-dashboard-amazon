@@ -91,7 +91,16 @@
     <Compile Include="Inventory\NewInventory.cs">
       <DependentUpon>InventoryModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Inventory\SalesOrder.cs">
+    <Compile Include="Inventory\OrderItem.cs">
+      <DependentUpon>InventoryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\SalesOrderInput.cs">
+      <DependentUpon>InventoryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\UdfGetOrderMapBySales_Result.cs">
+      <DependentUpon>InventoryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\UdfGetOrderMapCount_Result.cs">
       <DependentUpon>InventoryModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

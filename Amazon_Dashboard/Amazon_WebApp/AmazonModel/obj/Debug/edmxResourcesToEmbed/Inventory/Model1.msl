@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InventoryModelStoreContainer" CdmEntityContainer="Entities">
+    <FunctionImportMapping FunctionName="InventoryModel.Store.UdfGetOrderMapBySales" FunctionImportName="UdfGetOrderMapBySales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InventoryModel.UdfGetOrderMapBySales_Result">
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="InventoryModel.Store.UdfGetOrderMapCount" FunctionImportName="UdfGetOrderMapCount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InventoryModel.UdfGetOrderMapCount_Result">
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

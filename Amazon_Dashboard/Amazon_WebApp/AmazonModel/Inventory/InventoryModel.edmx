@@ -19,38 +19,127 @@
           <Property Name="ItemId" Type="nvarchar" MaxLength="100" />
           <Property Name="TheSourceId" Type="int" />
         </EntityType>
-        <EntityType Name="SalesOrder">
+        <EntityType Name="OrderItem">
           <Key>
-            <PropertyRef Name="SalesId" />
+            <PropertyRef Name="OrderItemId" />
           </Key>
-          <Property Name="SalesId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="OrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="AltOrderId" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrderItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderItemNumberId" Type="bigint" Nullable="false" />
+          <Property Name="SKU" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CurrencyType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CurrencyConversionDate" Type="datetime2" Precision="7" />
+          <Property Name="CurrencyConversionRate" Type="decimal" Precision="18" Scale="6" />
+          <Property Name="Location" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPC" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+          <Property Name="ItemName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ListingId" Type="nvarchar" MaxLength="50" />
+          <Property Name="Price" Type="money" Nullable="false" />
+          <Property Name="UnitTax" Type="money" />
+          <Property Name="ShippingFee" Type="money" />
+          <Property Name="ShippingFeeTax" Type="money" />
+          <Property Name="QuantityPurchased" Type="int" />
+          <Property Name="TotalPrice" Type="money" />
+          <Property Name="ItemFees" Type="money" />
+          <Property Name="ItemCondition" Type="int" />
+          <Property Name="ItemSource" Type="nvarchar" MaxLength="50" />
+          <Property Name="ItemCost" Type="money" />
+          <Property Name="OriginalAmount" Type="money" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ITP298-Amazon.dbo.SalesOrderInput' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="SalesOrderInput">
+          <Key>
+            <PropertyRef Name="SortNbr" />
+            <PropertyRef Name="AltOrderId" />
+            <PropertyRef Name="SiteOrderId" />
+            <PropertyRef Name="MerchantId" />
+            <PropertyRef Name="MarketplaceId" />
+          </Key>
+          <Property Name="SortNbr" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AltOrderId" Type="bigint" Nullable="false" />
+          <Property Name="SiteOrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="PaymentStatus" Type="nvarchar" MaxLength="50" />
-          <Property Name="PaymentsDate" Type="datetime2" Precision="7" />
-          <Property Name="PaymentTransactionId" Type="bigint" />
-          <Property Name="OrderTotalPrice" Type="money" />
+          <Property Name="PaymentDate" Type="datetime2" Precision="7" />
+          <Property Name="PaymentTransId" Type="nvarchar" MaxLength="1" />
+          <Property Name="OrderTotal" Type="money" />
           <Property Name="PurchaseDate" Type="datetime2" Precision="7" />
           <Property Name="BatchId" Type="bigint" />
           <Property Name="BuyerEmail" Type="nvarchar" MaxLength="200" />
           <Property Name="BuyerName" Type="nvarchar" MaxLength="100" />
+          <Property Name="RecipientName" Type="nvarchar" MaxLength="100" />
           <Property Name="ShippingMethod" Type="nvarchar" MaxLength="50" />
-          <Property Name="Status" Type="nvarchar" MaxLength="20" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
           <Property Name="ShippingCarrier" Type="nvarchar" MaxLength="50" />
           <Property Name="Tracking" Type="nvarchar" MaxLength="50" />
-          <Property Name="PaymentMethod" Type="nvarchar" MaxLength="50" />
-          <Property Name="MerchantId" Type="int" Nullable="false" />
-          <Property Name="MarketplaceId" Type="int" Nullable="false" />
+          <Property Name="PaymentMethod" Type="nvarchar" MaxLength="1" />
+          <Property Name="MerchantId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MarketplaceId" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <Function Name="UdfGetOrderMapBySales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartDateRange" Type="date" Mode="In" />
+          <Parameter Name="EndDateRange" Type="date" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="State" Type="nvarchar" MaxLength="50" />
+                <Property Name="Subtotal" Type="int" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="UdfGetOrderMapCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StartDateRange" Type="date" Mode="In" />
+          <Parameter Name="EndDateRange" Type="date" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="State" Type="nvarchar" MaxLength="50" />
+                <Property Name="Subtotal" Type="int" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
         <EntityContainer Name="InventoryModelStoreContainer">
           <EntitySet Name="NewInventory" EntityType="Self.NewInventory" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="SalesOrder" EntityType="Self.SalesOrder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrderItem" EntityType="Self.OrderItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SalesOrderInput" EntityType="Self.SalesOrderInput" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SalesOrderInput].[SortNbr] AS [SortNbr], 
+    [SalesOrderInput].[AltOrderId] AS [AltOrderId], 
+    [SalesOrderInput].[SiteOrderId] AS [SiteOrderId], 
+    [SalesOrderInput].[PaymentStatus] AS [PaymentStatus], 
+    [SalesOrderInput].[PaymentDate] AS [PaymentDate], 
+    [SalesOrderInput].[PaymentTransId] AS [PaymentTransId], 
+    [SalesOrderInput].[OrderTotal] AS [OrderTotal], 
+    [SalesOrderInput].[PurchaseDate] AS [PurchaseDate], 
+    [SalesOrderInput].[BatchId] AS [BatchId], 
+    [SalesOrderInput].[BuyerEmail] AS [BuyerEmail], 
+    [SalesOrderInput].[BuyerName] AS [BuyerName], 
+    [SalesOrderInput].[RecipientName] AS [RecipientName], 
+    [SalesOrderInput].[ShippingMethod] AS [ShippingMethod], 
+    [SalesOrderInput].[Status] AS [Status], 
+    [SalesOrderInput].[ShippingCarrier] AS [ShippingCarrier], 
+    [SalesOrderInput].[Tracking] AS [Tracking], 
+    [SalesOrderInput].[PaymentMethod] AS [PaymentMethod], 
+    [SalesOrderInput].[MerchantId] AS [MerchantId], 
+    [SalesOrderInput].[MarketplaceId] AS [MarketplaceId]
+    FROM [dbo].[SalesOrderInput] AS [SalesOrderInput]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="InventoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <ComplexType Name="UdfGetOrderMapBySales_Result">
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Subtotal" Type="Int32" />
+        </ComplexType>
+        <ComplexType Name="UdfGetOrderMapCount_Result">
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Subtotal" Type="Int32" />
+        </ComplexType>
         <EntityType Name="NewInventory">
           <Key>
             <PropertyRef Name="PurchaseId" />
@@ -65,32 +154,73 @@
           <Property Name="ItemId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="TheSourceId" Type="Int32" />
         </EntityType>
-        <EntityType Name="SalesOrder">
+        <EntityType Name="OrderItem">
           <Key>
-            <PropertyRef Name="SalesId" />
+            <PropertyRef Name="OrderItemId" />
           </Key>
-          <Property Name="SalesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="OrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="AltOrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OrderItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderItemNumberId" Type="Int64" Nullable="false" />
+          <Property Name="SKU" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CurrencyType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CurrencyConversionDate" Type="DateTime" Precision="7" />
+          <Property Name="CurrencyConversionRate" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ProductId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ItemName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ListingId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="UnitTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ShippingFee" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ShippingFeeTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="QuantityPurchased" Type="Int32" />
+          <Property Name="TotalPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ItemFees" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ItemCondition" Type="Int32" />
+          <Property Name="ItemSource" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ItemCost" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="OriginalAmount" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="SalesOrderInput">
+          <Key>
+            <PropertyRef Name="SortNbr" />
+            <PropertyRef Name="AltOrderId" />
+            <PropertyRef Name="SiteOrderId" />
+            <PropertyRef Name="MerchantId" />
+            <PropertyRef Name="MarketplaceId" />
+          </Key>
+          <Property Name="SortNbr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AltOrderId" Type="Int64" Nullable="false" />
+          <Property Name="SiteOrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="PaymentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="PaymentsDate" Type="DateTime" Precision="7" />
-          <Property Name="PaymentTransactionId" Type="Int64" />
-          <Property Name="OrderTotalPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PaymentDate" Type="DateTime" Precision="7" />
+          <Property Name="PaymentTransId" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="OrderTotal" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="PurchaseDate" Type="DateTime" Precision="7" />
           <Property Name="BatchId" Type="Int64" />
           <Property Name="BuyerEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="BuyerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RecipientName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="ShippingMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ShippingCarrier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Tracking" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="PaymentMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="MerchantId" Type="Int32" Nullable="false" />
-          <Property Name="MarketplaceId" Type="Int32" Nullable="false" />
+          <Property Name="PaymentMethod" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="MerchantId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MarketplaceId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="InventoryEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="NewInventories" EntityType="Self.NewInventory" />
-          <EntitySet Name="SalesOrders" EntityType="Self.SalesOrder" />
+          <EntitySet Name="OrderItems" EntityType="Self.OrderItem" />
+          <EntitySet Name="SalesOrderInputs" EntityType="Self.SalesOrderInput" />
+          <FunctionImport Name="UdfGetOrderMapBySales" IsComposable="true" ReturnType="Collection(InventoryModel.UdfGetOrderMapBySales_Result)">
+            <Parameter Name="StartDateRange" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDateRange" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="UdfGetOrderMapCount" IsComposable="true" ReturnType="Collection(InventoryModel.UdfGetOrderMapCount_Result)">
+            <Parameter Name="StartDateRange" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDateRange" Mode="In" Type="DateTime" />
+          </FunctionImport>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -113,20 +243,49 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="SalesOrders">
-            <EntityTypeMapping TypeName="InventoryModel.SalesOrder">
-              <MappingFragment StoreEntitySet="SalesOrder">
-                <ScalarProperty Name="SalesId" ColumnName="SalesId" />
-                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <EntitySetMapping Name="OrderItems">
+            <EntityTypeMapping TypeName="InventoryModel.OrderItem">
+              <MappingFragment StoreEntitySet="OrderItem">
+                <ScalarProperty Name="OrderItemId" ColumnName="OrderItemId" />
+                <ScalarProperty Name="OrderItemNumberId" ColumnName="OrderItemNumberId" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
+                <ScalarProperty Name="CurrencyType" ColumnName="CurrencyType" />
+                <ScalarProperty Name="CurrencyConversionDate" ColumnName="CurrencyConversionDate" />
+                <ScalarProperty Name="CurrencyConversionRate" ColumnName="CurrencyConversionRate" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="UPC" ColumnName="UPC" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="ListingId" ColumnName="ListingId" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="UnitTax" ColumnName="UnitTax" />
+                <ScalarProperty Name="ShippingFee" ColumnName="ShippingFee" />
+                <ScalarProperty Name="ShippingFeeTax" ColumnName="ShippingFeeTax" />
+                <ScalarProperty Name="QuantityPurchased" ColumnName="QuantityPurchased" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="ItemFees" ColumnName="ItemFees" />
+                <ScalarProperty Name="ItemCondition" ColumnName="ItemCondition" />
+                <ScalarProperty Name="ItemSource" ColumnName="ItemSource" />
+                <ScalarProperty Name="ItemCost" ColumnName="ItemCost" />
+                <ScalarProperty Name="OriginalAmount" ColumnName="OriginalAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SalesOrderInputs">
+            <EntityTypeMapping TypeName="InventoryModel.SalesOrderInput">
+              <MappingFragment StoreEntitySet="SalesOrderInput">
+                <ScalarProperty Name="SortNbr" ColumnName="SortNbr" />
                 <ScalarProperty Name="AltOrderId" ColumnName="AltOrderId" />
+                <ScalarProperty Name="SiteOrderId" ColumnName="SiteOrderId" />
                 <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
-                <ScalarProperty Name="PaymentsDate" ColumnName="PaymentsDate" />
-                <ScalarProperty Name="PaymentTransactionId" ColumnName="PaymentTransactionId" />
-                <ScalarProperty Name="OrderTotalPrice" ColumnName="OrderTotalPrice" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="PaymentTransId" ColumnName="PaymentTransId" />
+                <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
                 <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
                 <ScalarProperty Name="BatchId" ColumnName="BatchId" />
                 <ScalarProperty Name="BuyerEmail" ColumnName="BuyerEmail" />
                 <ScalarProperty Name="BuyerName" ColumnName="BuyerName" />
+                <ScalarProperty Name="RecipientName" ColumnName="RecipientName" />
                 <ScalarProperty Name="ShippingMethod" ColumnName="ShippingMethod" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="ShippingCarrier" ColumnName="ShippingCarrier" />
@@ -137,6 +296,22 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionName="InventoryModel.Store.UdfGetOrderMapBySales" FunctionImportName="UdfGetOrderMapBySales">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="InventoryModel.UdfGetOrderMapBySales_Result">
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="InventoryModel.Store.UdfGetOrderMapCount" FunctionImportName="UdfGetOrderMapCount">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="InventoryModel.UdfGetOrderMapCount_Result">
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

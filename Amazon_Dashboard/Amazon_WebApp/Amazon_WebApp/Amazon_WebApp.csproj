@@ -131,7 +131,6 @@
     <Compile Include="Areas\Expenses\ExpensesAreaRegistration.cs" />
     <Compile Include="Areas\Inventory\Controllers\InventoryController.cs" />
     <Compile Include="Areas\Inventory\Controllers\NewInventoriesController.cs" />
-    <Compile Include="Areas\Inventory\Controllers\SalesOrdersController.cs" />
     <Compile Include="Areas\Inventory\InventoryAreaRegistration.cs" />
     <Compile Include="Areas\Reporting\Controllers\ReportingController.cs" />
     <Compile Include="Areas\Reporting\ReportingAreaRegistration.cs" />

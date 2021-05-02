@@ -14,31 +14,112 @@
     <Property Name="ItemId" Type="nvarchar" MaxLength="100" />
     <Property Name="TheSourceId" Type="int" />
   </EntityType>
-  <EntityType Name="SalesOrder">
+  <EntityType Name="OrderItem">
     <Key>
-      <PropertyRef Name="SalesId" />
+      <PropertyRef Name="OrderItemId" />
     </Key>
-    <Property Name="SalesId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="OrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="AltOrderId" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderItemNumberId" Type="bigint" Nullable="false" />
+    <Property Name="SKU" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CurrencyType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CurrencyConversionDate" Type="datetime2" Precision="7" />
+    <Property Name="CurrencyConversionRate" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" />
+    <Property Name="UPC" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="50" />
+    <Property Name="ItemName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ListingId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="UnitTax" Type="money" />
+    <Property Name="ShippingFee" Type="money" />
+    <Property Name="ShippingFeeTax" Type="money" />
+    <Property Name="QuantityPurchased" Type="int" />
+    <Property Name="TotalPrice" Type="money" />
+    <Property Name="ItemFees" Type="money" />
+    <Property Name="ItemCondition" Type="int" />
+    <Property Name="ItemSource" Type="nvarchar" MaxLength="50" />
+    <Property Name="ItemCost" Type="money" />
+    <Property Name="OriginalAmount" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITP298-Amazon.dbo.SalesOrderInput' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SalesOrderInput">
+    <Key>
+      <PropertyRef Name="SortNbr" />
+      <PropertyRef Name="AltOrderId" />
+      <PropertyRef Name="SiteOrderId" />
+      <PropertyRef Name="MerchantId" />
+      <PropertyRef Name="MarketplaceId" />
+    </Key>
+    <Property Name="SortNbr" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AltOrderId" Type="bigint" Nullable="false" />
+    <Property Name="SiteOrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="PaymentStatus" Type="nvarchar" MaxLength="50" />
-    <Property Name="PaymentsDate" Type="datetime2" Precision="7" />
-    <Property Name="PaymentTransactionId" Type="bigint" />
-    <Property Name="OrderTotalPrice" Type="money" />
+    <Property Name="PaymentDate" Type="datetime2" Precision="7" />
+    <Property Name="PaymentTransId" Type="nvarchar" MaxLength="1" />
+    <Property Name="OrderTotal" Type="money" />
     <Property Name="PurchaseDate" Type="datetime2" Precision="7" />
     <Property Name="BatchId" Type="bigint" />
     <Property Name="BuyerEmail" Type="nvarchar" MaxLength="200" />
     <Property Name="BuyerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RecipientName" Type="nvarchar" MaxLength="100" />
     <Property Name="ShippingMethod" Type="nvarchar" MaxLength="50" />
-    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
     <Property Name="ShippingCarrier" Type="nvarchar" MaxLength="50" />
     <Property Name="Tracking" Type="nvarchar" MaxLength="50" />
-    <Property Name="PaymentMethod" Type="nvarchar" MaxLength="50" />
-    <Property Name="MerchantId" Type="int" Nullable="false" />
-    <Property Name="MarketplaceId" Type="int" Nullable="false" />
+    <Property Name="PaymentMethod" Type="nvarchar" MaxLength="1" />
+    <Property Name="MerchantId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MarketplaceId" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <Function Name="UdfGetOrderMapBySales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDateRange" Type="date" Mode="In" />
+    <Parameter Name="EndDateRange" Type="date" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="Subtotal" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="UdfGetOrderMapCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDateRange" Type="date" Mode="In" />
+    <Parameter Name="EndDateRange" Type="date" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="Subtotal" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
   <EntityContainer Name="InventoryModelStoreContainer">
     <EntitySet Name="NewInventory" EntityType="Self.NewInventory" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="SalesOrder" EntityType="Self.SalesOrder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderItem" EntityType="Self.OrderItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesOrderInput" EntityType="Self.SalesOrderInput" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SalesOrderInput].[SortNbr] AS [SortNbr], 
+    [SalesOrderInput].[AltOrderId] AS [AltOrderId], 
+    [SalesOrderInput].[SiteOrderId] AS [SiteOrderId], 
+    [SalesOrderInput].[PaymentStatus] AS [PaymentStatus], 
+    [SalesOrderInput].[PaymentDate] AS [PaymentDate], 
+    [SalesOrderInput].[PaymentTransId] AS [PaymentTransId], 
+    [SalesOrderInput].[OrderTotal] AS [OrderTotal], 
+    [SalesOrderInput].[PurchaseDate] AS [PurchaseDate], 
+    [SalesOrderInput].[BatchId] AS [BatchId], 
+    [SalesOrderInput].[BuyerEmail] AS [BuyerEmail], 
+    [SalesOrderInput].[BuyerName] AS [BuyerName], 
+    [SalesOrderInput].[RecipientName] AS [RecipientName], 
+    [SalesOrderInput].[ShippingMethod] AS [ShippingMethod], 
+    [SalesOrderInput].[Status] AS [Status], 
+    [SalesOrderInput].[ShippingCarrier] AS [ShippingCarrier], 
+    [SalesOrderInput].[Tracking] AS [Tracking], 
+    [SalesOrderInput].[PaymentMethod] AS [PaymentMethod], 
+    [SalesOrderInput].[MerchantId] AS [MerchantId], 
+    [SalesOrderInput].[MarketplaceId] AS [MarketplaceId]
+    FROM [dbo].[SalesOrderInput] AS [SalesOrderInput]</DefiningQuery>
+    </EntitySet>
   </EntityContainer>
 </Schema>
