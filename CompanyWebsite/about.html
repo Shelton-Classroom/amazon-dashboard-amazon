@@ -44,15 +44,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="navbar-nav ml-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Login</a>
-                            <a href="#" class="dropdown-item">Register</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </nav>
     </div>
@@ -77,7 +68,6 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <!--  leaving this div empty for now -->
             </div>
         </div>
     </div>
@@ -96,17 +86,15 @@
 <!-- Breadcrumb End -->
 
 <!-- My Account Start -->
-<div class="my-account">
+<div class="about">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
                 <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="dashboard-nav" data-toggle="pill" href="#dashboard-tab"
                        role="tab"><i class="fa fa-tachometer-alt"></i>About</a>
-                    <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i
-                            class="fa fa-credit-card"></i>Payment Method</a>
                     <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i
-                            class="fa fa-map-marker-alt"></i>address</a>
+                            class="fa fa-map-marker-alt"></i>Update Address</a>
                     <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab"><i
                             class="fa fa-user"></i>Account Details</a>
                     <a class="nav-link" href="index.html"><i class="fa fa-sign-out-alt"></i>Logout</a>
@@ -116,38 +104,60 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="dashboard-tab" role="tabpanel"
                          aria-labelledby="dashboard-nav">
-                        <h4>About</h4>
+                        <h4>Who is MediaBazaar?</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum quam ac mi
-                            viverra dictum. In efficitur ipsum diam, at dignissim lorem tempor in. Vivamus tempor
-                            hendrerit finibus. Nulla tristique viverra nisl, sit amet bibendum ante suscipit non.
-                            Praesent in faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien
-                            eget arcu rhoncus scelerisque.
+                            Solution to enhance stability and increase productivity in a chaotic multi-channeled sales order and fulfilment environment.  Facilitating "sale to mail" clarity, oversight , and performance overview through dashboards and reporting simplification for small to medium sized organizations.
                         </p>
-                    </div>
-                    <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">
-                        <h4>Payment Method</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum quam ac mi
-                            viverra dictum. In efficitur ipsum diam, at dignissim lorem tempor in. Vivamus tempor
-                            hendrerit finibus. Nulla tristique viverra nisl, sit amet bibendum ante suscipit non.
-                            Praesent in faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien
-                            eget arcu rhoncus scelerisque.
-                        </p>
+                        <ul >
+                        <li class="selected" >
+                            <div class="cd-full-width">
+                                <div class="container-fluid js-tm-page-content tm-page-pad" data-page-no="1">
+                                    <div class="row">
+                                        <div class="tm-3-col-container">
+                                            <div class="col-md-4-textbox">
+                                                <div class="text-xs-left tm-textbox tm-textbox-padding tm-bg-white-translucent tm-3-col-textbox-inner">
+                                                    <h2 class="tm-text-title">Our Mission </h2>
+                                                    <p class="tm-text">Inspire transparency and continuous improvement of the order process to orchestrate a superior experience for our customers, empowerment for our team and aspirational pride for our stakeholders.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4-col-textbox">
+                                                <div class="text-xs-left tm-textbox tm-textbox-padding tm-bg-white-translucent tm-3-col-textbox-inner">
+
+                                                    <h2 class="tm-text-title">Our Essence</h2>
+                                                    <p class="tm-text">Fostering value for our customers by offering invigorated productivity and services that enlarge the marketplace based on deployment of original, effective, trusted, and efficient niche technology</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4-textbox">
+                                                <div class="text-xs-left tm-textbox tm-textbox-padding tm-bg-white-translucent tm-3-col-textbox-inner">
+                                                    <h2 class="tm-text-title">Core Competency </h2>
+                                                    <p class="tm-text">Technology driven organization that facilitates a clearer understanding of revenue and organizational challenges from a diverse group of sales channels.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
                     </div>
                     <div class="tab-pane fade" id="address-tab" role="tabpanel" aria-labelledby="address-nav">
                         <h4>Address</h4>
                         <div class="row">
                             <div class="col-md-6">
                                 <h5>Payment Address</h5>
-                                <p>123 Payment Street, Los Angeles, CA</p>
-                                <p>Mobile: 012-345-6789</p>
+                                <p><i class="fa fa-map-marker"></i>379 Nunnally Farm Rd, Monroe, GA 30655</p>
+                                <p><i class="fa fa-envelope"></i>support@mediabazaar.com</p>
+                                <p><i class="fa fa-phone"></i>+804-555-1212</p>
+                                <p><i class="fa fa-fax"></i>+804-701-7399</p>
                                 <button class="btn">Edit Address</button>
                             </div>
                             <div class="col-md-6">
                                 <h5>Shipping Address</h5>
-                                <p>123 Shipping Street, Los Angeles, CA</p>
-                                <p>Mobile: 012-345-6789</p>
+                                <p><i class="fa fa-map-marker"></i>379 Nunnally Farm Rd, Monroe, GA 30655</p>
+                                <p><i class="fa fa-envelope"></i>support@mediabazaar.com</p>
+                                <p><i class="fa fa-phone"></i>+804-555-1212</p>
+                                <p><i class="fa fa-fax"></i>+804-701-7399</p>
                                 <button class="btn">Edit Address</button>
                             </div>
                         </div>
@@ -202,12 +212,15 @@
 <div class="brand">
     <div class="container-fluid">
         <div class="brand-slider">
-            <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+            <div class="brand-item"><img src="img/amazon.png" alt=""></div>
+            <div class="brand-item"><img src="img/amazon-canada-logo.png" alt=""></div>
+            <div class="brand-item"><img src="img/amazon-mexico-logo.png" alt=""></div>
+            <div class="brand-item"><img src="img/amazon-uk-logo.png" alt=""></div>
+            <div class="brand-item"><img src="img/alibris-logo.png" alt=""></div>
+            <div class="brand-item"><img src="img/biblio-logo.png" alt=""></div>
+            <div class="brand-item"><img src="img/ebay-logo.png" alt=""></div>
+<!--            <div class="brand-item"><img src="img/half.com-logo.png" alt=""></div>-->
+            <div class="brand-item"><img src="img/TextBookX-logo.png" alt=""></div>
         </div>
     </div>
 </div>
@@ -221,9 +234,10 @@
                 <div class="footer-widget">
                     <h2>Get in Touch</h2>
                     <div class="contact-info">
-                        <p><i class="fa fa-map-marker"></i>1651 E Parham Road, Richmond VA 23228</p>
-                        <p><i class="fa fa-envelope"></i>reynolds@example.com</p>
-                        <p><i class="fa fa-phone"></i>+804-000-000</p>
+                        <p><i class="fa fa-map-marker"></i>379 Nunnally Farm Rd, Monroe, GA 30655</p>
+                        <p><i class="fa fa-envelope"></i>support@mediabazaar.com</p>
+                        <p><i class="fa fa-phone"></i>+804-555-1212</p>
+                        <p><i class="fa fa-fax"></i>+804-701-7399</p>
                     </div>
                 </div>
             </div>
@@ -233,11 +247,12 @@
                     <h2>Follow Us</h2>
                     <div class="contact-info">
                         <div class="social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/MediaBazaar"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/MediaBazaar"><i class="fab fa-facebook-f"></i></a>
                             <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/MediaBazaar/"><i class="fab fa-instagram"></i></a>
                             <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.reddit.com/r/MEDIABazaar/"><i class="fab fa-reddit"></i></a>
                         </div>
                     </div>
                 </div>
@@ -247,7 +262,7 @@
                 <div class="footer-widget">
                     <h2>Company Info</h2>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms & Condition</a></li>
                     </ul>
@@ -259,7 +274,7 @@
                     <h2>Purchase Info</h2>
                     <ul>
                         <li><a href="#">Payment Policy</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
                         <li><a href="#">Return Policy</a></li>
                     </ul>
                 </div>
